@@ -1,6 +1,14 @@
 # Projeto-BulbeShop-Grupo4
 Componentes: Bernardo Cerqueira, Emanuel Brandão, Gabriel Fonseca, Gabriel Montandon, Henrique Araujo, Joao Pedro Lodi
 
+Baixa fidelidade:
+https://www.figma.com/board/9uS1PVsxe0UWDNwACcwJUl/Sprint-1-Projeto-Bulbe?node-id=0-1&p=f&t=KWe3uVxchUap200Y-0
+
+Backlog:
+https://docs.google.com/document/d/1CZ5wrlA9mjkTnp5wFri8biepWON3zQm5Nf5Cw_A-dfY/edit?usp=sharing
+
+Dailys:
+https://docs.google.com/document/d/1lAfZxk55VSfGjrQLFiPmjG53WF4UnVGLaShb2RjSL2o/edit?tab=t.0
 
 Bulbe — Backlog do Produto (do Sprint 1 até o fim do semestre)
 Este documento consolida o backlog do aplicativo Bulbe com base nos protótipos de baixa fidelidade (login → catálogo/home → detalhe do produto → endereço → entrega/pagamento → confirmação). O formato prioriza narrativa/descrição em vez de tabelas.
