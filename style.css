@@ -5,24 +5,14 @@
         box-sizing: border-box;
     }
     :root {
-        --cor-principal: #08068D;
         --branco: #FFFFFF;
         --preto: #000000;
-        --C25: #F6F9F9;
-        --C50: #E1E6EA;
-        --C100: #D1D9E0;
-        --C200: #C2CCD6;
-        --C300: #A4B3C1;
-        --C400: #8699AC;
-        --C500: #678098;
-        --C600: #536679;
-        --C700: #3E4D5B;
-        --C800: #29333D;
-        --C900: #151A1E;
-        --VF500: #26D07C;
-        --AC600: #0762C7;
-        --AS500: #FF9E1B;
-        --A500: #F79009;
+        --C25: #F6F9F9; --C50: #E1E6EA; --C100: #D1D9E0; --C200: #C2CCD6; --C300: #A4B3C1; --C400: #8699AC; --C500: #678098; --C600: #536679; --C700: #3E4D5B; --C800: #29333D; --C900: #151A1E;
+        --AU50: #E7E7FE; --AU100: #CFCEFD; --AU200: #9F9DFB; --AU300: #6E6CF9; --AU400: #3E3BF7; --AU500: #0E0AF5; --AU600: #0B08C4; --AU700: #08068D; --AU800: #060462; --AU900: #030231; 
+        --VF50: #E9FBF2; --VF100: #D4F7E6; --VF200: #A9EFCC; --VF300: #7EE7B3; --VF400: #53DF99; --VF500: #26D07C; --VF600: #20AC66; --VF700: #18814D; --VF800: #105633; --VF900: #082B1A;
+        --AC50: #E6F1FE; --AC100: #CEE4FD; --AC200: #9DC9FB; --AC300: #6BAEFA; --AC400: #3A93F8; --AC500: #0978F6; --AC600: #0762C7; --AC700: #054894; --AC800: #043062; --AC900: #021831;
+        --AS50: #FFF4E6; --AS100: #FFE9CC; --AS200: #FFD399; --AS300: #FFC880; --AS400: #FFA733; --AS500: #FF9E1B; --AS600: #CC7400; --AS700: #995700; --AS800: #663A00; --AS900: #331D00;
+        --A50: #FFFAEB; --A100: #FEF0C7; --A200: #FEDF89; --A300: #FEC84B; --A400: #FDB022; --A500: #F79009; --A600: #DC6803; --A700: #B54708; --A800: #93370D; --A900: #7A2E0E;
         --E500: #F04438;
     }
     body {
@@ -75,30 +65,30 @@
     }
     .promo1 {
         grid-column: 1/2;
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 10px;
     }
     .promo2 {
         grid-column: 2/3;
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 10px;
     }
     .promo3 {
         grid-column: 3/4;
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 10px;
     }
     .promocao {
         height: 150px;
         width: 350px;
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 10px;
     }
 
     .maisVendidos {
         width: 100vw;
         margin-left: 40px;
-        border-left: 5px solid var(--cor-principal);
+        border-left: 5px solid var(--AU700);
     }
     .maisVendidos p {
         margin-left: 5px;
@@ -116,7 +106,7 @@
         height: 30px;
         flex-shrink: 0; /* impede que os botões encolham */
         z-index: 10; /* garante que fiquem acima */
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         color: white;
         border: none;
         border-radius: 50%;
@@ -168,7 +158,7 @@
         height: 20px;
         width: 110px;
         color: var(--branco);
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 30px;
         margin-bottom: 20px;
         border: none;
@@ -176,7 +166,7 @@
     .promocao_pequena {
         height: 110px;
         width: 350px;
-        background-color: var(--cor-principal);
+        background-color: var(--AU700);
         border-radius: 10px;
     }
     
