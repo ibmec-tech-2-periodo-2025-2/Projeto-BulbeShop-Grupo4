@@ -1,0 +1,14 @@
+#cep, #ender, #comp, #num{
+    width: 75vw;
+    height: 7.5vh;
+    border-radius: 10px;
+}
+
+.but{
+    width: 75vw;
+    height: 7.5vh;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--AU600);
+    color: var(--branco);
+}
