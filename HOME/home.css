@@ -1,51 +1,4 @@
 @media (max-width: 440px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    :root {
-        --branco: #FFFFFF;
-        --preto: #000000;
-        --C25: #F6F9F9; --C50: #E1E6EA; --C100: #D1D9E0; --C200: #C2CCD6; --C300: #A4B3C1; --C400: #8699AC; --C500: #678098; --C600: #536679; --C700: #3E4D5B; --C800: #29333D; --C900: #151A1E;
-        --AU50: #E7E7FE; --AU100: #CFCEFD; --AU200: #9F9DFB; --AU300: #6E6CF9; --AU400: #3E3BF7; --AU500: #0E0AF5; --AU600: #0B08C4; --AU700: #08068D; --AU800: #060462; --AU900: #030231; 
-        --VF50: #E9FBF2; --VF100: #D4F7E6; --VF200: #A9EFCC; --VF300: #7EE7B3; --VF400: #53DF99; --VF500: #26D07C; --VF600: #20AC66; --VF700: #18814D; --VF800: #105633; --VF900: #082B1A;
-        --AC50: #E6F1FE; --AC100: #CEE4FD; --AC200: #9DC9FB; --AC300: #6BAEFA; --AC400: #3A93F8; --AC500: #0978F6; --AC600: #0762C7; --AC700: #054894; --AC800: #043062; --AC900: #021831;
-        --AS50: #FFF4E6; --AS100: #FFE9CC; --AS200: #FFD399; --AS300: #FFC880; --AS400: #FFA733; --AS500: #FF9E1B; --AS600: #CC7400; --AS700: #995700; --AS800: #663A00; --AS900: #331D00;
-        --A50: #FFFAEB; --A100: #FEF0C7; --A200: #FEDF89; --A300: #FEC84B; --A400: #FDB022; --A500: #F79009; --A600: #DC6803; --A700: #B54708; --A800: #93370D; --A900: #7A2E0E;
-        --E50: #FEF3F2; --E100: #FEE4E2; --E200: #FECDCA; --E300: #FDA29B; --E400: #F97066; --E500: #F04438; --E600: #D92D20; --E700: #B42318; --E800: #912018; --E900: #7A271A;
-        --S50: #ECFDF3; --S100: #D1FADF; --S200: #A6F4C5; --S300: #6CE9A6; --S400: #32D583; --S500: #12B76A; --S600: #039855; --S700: #027A48; --S800: #05603A; --S900: #054F31;
-        --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
-    }
-    body {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    /*Objetos Header*/
-    header {
-        width: 100%;
-        background-color: var(--branco);
-        display: flex;
-        height: 70px;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 1px 10px -5px var(--preto);
-        position: fixed;
-        top: 0;
-        gap: 80px;
-        z-index: 1;
-    }
-    .menu img {
-        width: 30px;
-    }
-    .logo img {
-        width: 120px;
-        margin-left: 20px;
-    }
-    .user img {
-        width: 47px;
-    }
-    
     /*Objetos Main*/
     main {
         background-color: var(--branco);
@@ -172,18 +125,5 @@
         width: 350px;
         background-color: var(--AU700);
         border-radius: 10px;
-    }
-    
-    /*Objetos Footer*/
-    footer {
-        background-color: var(--branco);
-        display: flex;
-        width: 100%;
-        height: 100px;
-        box-shadow: 0 -1px 10px -5px var(--preto);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
     }
 }
