@@ -16,14 +16,15 @@
         gap: 30px;
     }
     .entrega{
-        margin-top: 80px;
+        margin-top: 100px;
         border: 1px solid var(--M8);
         background-color: var(--M8);
         color: var(--A50);
+        font-size: large;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 80%;
         height: 50px;
         border-radius: 20px;
     }
@@ -34,12 +35,34 @@
         justify-content: center;
         background-color: var(--M8);
         color: var(--A50);
-        width: 70%;
+        font-size: large;
+        width: 80%;
         height: 50px;
         border-radius: 20px;
 
     }
-    .botoes{
-        
+    .d_entregas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .d_pagamentos{
+        /* border: 2px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .botao{
+        border:none;
+        box-shadow: 0px 4px 8px var(--preto);
+        border-radius: 20px;
+        width: 65%;
+        height: 60px;
     }
 }
