@@ -10,11 +10,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+ 
 .imgCompra {
-
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
 }
 
-.botaoRastreio{
+.botaoRastreio {
 
 }
 
