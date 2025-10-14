@@ -1,14 +1,45 @@
-#cep, #ender, #comp, #num{
+@media (max-width: 440px) {
+  main {
+    min-height: calc(100vh - 130px);
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+
+  .tudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+  }
+
+  #cep, #ender, #comp, #num {
     width: 75vw;
     height: 7.5vh;
     border-radius: 10px;
-}
+    border: 1px solid var(--C200);
+    padding-left: 10px;
+  }
 
-.but{
+  .but {
     width: 75vw;
     height: 7.5vh;
     border-radius: 20px;
     border: none;
     background-color: var(--AU600);
     color: var(--branco);
+    font-weight: bold;
+  }
+
+  .but:hover {
+    background-color: var(--AU500);
+  }
 }
