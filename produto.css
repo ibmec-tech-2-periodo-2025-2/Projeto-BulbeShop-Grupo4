@@ -100,4 +100,10 @@
         
         width: 100px;
 }
+.estrelas{
+    border:#027A48 solid 3px ;
+    padding-right: 100px;
+    display: flex;
+    
+}
 }
