@@ -83,4 +83,7 @@
     .botoes img {
         width: 30px;
     }
+    #marc {
+        border-top: 3px solid var(--AC700);
+    }
 }
