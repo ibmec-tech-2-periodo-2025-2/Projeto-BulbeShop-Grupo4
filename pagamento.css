@@ -17,8 +17,8 @@
     }
     .entrega{
         margin-top: 90px;
-        border: 1px solid var(--M8);
-        background-color: var(--M8);
+        border: 1px solid var(--AC700);
+        background-color: var(--AC700);
         color: var(--A50);
         font-size: large;
         display: flex;
@@ -29,11 +29,11 @@
         border-radius: 20px;
     }
     .pagamento{
-        border: 1px solid var(--M8);
+        border: 1px solid var(--AC700);
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--M8);
+        background-color: var(--AC700);
         color: var(--A50);
         font-size: large;
         width: 80%;
@@ -60,15 +60,15 @@
     }
     .botao{
         border:none;
-        box-shadow: 0px 4px 8px var(--preto);
+        box-shadow: 0 1px 10px -5px var(--preto);
         border-radius: 20px;
         width: 65%;
         height: 60px;
     }
     .b_continuar{
-        margin-top: 70px;
-        border: 1px solid var(--M8);
-        background-color: var(--M8);
+        margin-top: 50px;
+        border: 1px solid var(--AC700);
+        background-color: var(--AC700);
         color: var(--A50);
         font-size: large;
         display: flex;
@@ -77,5 +77,10 @@
         width: 80%;
         height: 50px;
         border-radius: 20px;
+    }
+    .corpo_pagamento{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
