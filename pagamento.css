@@ -16,30 +16,29 @@
         gap: 30px;
     }
     .entrega{
-        margin-top: 50px;
-        border: 1px solid var(--AC700);
-        background-color: var(--AC700);
-        color: var(--A50);
+        margin-top: 40px;
+        border-bottom: 2px solid var(--AC700);
+        /* background-color: var(--AC700); */
+        color: var(--AC700);
         font-size: large;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 67%;
         height: 50px;
-        border-radius: 20px;
+        font-weight: 550;
     }
     .pagamento{
-        border: 1px solid var(--AC700);
+        border-bottom: 2px solid var(--AC700);
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--AC700);
-        color: var(--A50);
+        /* background-color: var(--AC700); */
+        color: var(--AC700);
         font-size: large;
-        width: 80%;
+        width: 67%;
         height: 50px;
-        border-radius: 20px;
-
+        font-weight: 550;
     }
     .d_entregas{
         display: flex;
@@ -68,7 +67,7 @@
         cursor: pointer;
     }
     .b_confirmar{
-        margin-top: 50px;
+        margin-top: 40px;
         border: 1px solid var(--AC700);
         background-color: var(--AC700);
         color: var(--A50);
