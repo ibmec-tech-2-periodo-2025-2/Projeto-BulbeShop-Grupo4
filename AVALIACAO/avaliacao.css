@@ -1,0 +1,10 @@
+.avaliacao {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--C300);
+    padding: 15px;
+    margin-top: 20px;
+    padding-bottom: 160px;
+}
+
