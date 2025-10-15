@@ -53,15 +53,15 @@
   .forms label{
     color: var(--C800);
   }
-  
 
   .but {
     width: 75vw;
     height: 7.5vh;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
-    background-color: var(--AU600);
+    background-color: var(--AU700);
     color: var(--branco);
-    font-weight: bold;
+    font-weight: 650;
+    font-size: 16px;
   }
 }
