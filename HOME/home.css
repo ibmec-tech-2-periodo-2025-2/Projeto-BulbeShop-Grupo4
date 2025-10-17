@@ -69,6 +69,9 @@
         cursor: pointer;
         z-index: 0;
     }
+    .carrossel button img {
+        width: 20px;
+    }
     .carrossel-container {
         width: 310px;
         overflow: hidden;
@@ -84,7 +87,7 @@
     .produto {
         width: 145px;
         flex-shrink: 0;
-        box-shadow: 1px 1px 5px -3px black;
+        box-shadow: 1px 1px 10px -5px var(--preto);
         border-radius: 5px;
         display: flex;
         align-items: center;
