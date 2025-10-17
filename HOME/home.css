@@ -52,29 +52,17 @@
     .carrossel {
         display: flex;
         align-items: center;
-        gap: 5px;
         width: 100%;
-        justify-content: space-between;
-        padding: 0 10px;
-    }
-    .carrossel button {
-        min-width: 30px; /* largura fixa para os botões */
-        height: 30px;
-        flex-shrink: 0; /* impede que os botões encolham */
-        z-index: 10; /* garante que fiquem acima */
-        background-color: var(--AU700);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 0;
-    }
-    .carrossel button img {
-        width: 20px;
-    }
+        justify-content: center;
+    }   
     .carrossel-container {
         width: 310px;
         overflow: hidden;
+        touch-action: pan-y;
+        cursor: grab;
+    }
+    .carrossel-container:active {
+        cursor: grabbing;
     }
     .produtos {
         display: flex;
@@ -87,7 +75,7 @@
     .produto {
         width: 145px;
         flex-shrink: 0;
-        box-shadow: 1px 1px 10px -5px var(--preto);
+        box-shadow: 1px 1px 5px -3px black;
         border-radius: 5px;
         display: flex;
         align-items: center;
