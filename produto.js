@@ -15,3 +15,16 @@ aumentar.addEventListener('click', () => {
   valor++;
   quantidade.textContent = valor;
 });
+const imagens = document.querySelectorAll('.slides img');
+const anterior = document.querySelector('.btn-anterior');
+const proximo = document.querySelector('.btn-proximo');
+let indice = 0;
+
+function mostrarImagem(novoIndice) {
+  imagens[indice].classList.remove('ativo');
+  indice = (novoIndice + imagens.length) % imagens.length;
+  imagens[indice].classList.add('ativo');
+}
+
+anterior.addEventListener('click', () => mostrarImagem(indice - 1));
+proximo.addEventListener('click', () => mostrarImagem(indice + 1));
