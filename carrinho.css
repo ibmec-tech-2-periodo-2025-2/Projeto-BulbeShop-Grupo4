@@ -21,7 +21,6 @@
         font-family:'Poppins'
     }
     
-    /*Objetos Header*/
     header {
         width: 100%;
         background-color: var(--branco);
@@ -32,7 +31,7 @@
         box-shadow: 0 1px 10px -5px var(--preto);
         position: fixed;
         top: 0;
-        gap: 80px;
+        gap: 40px;
         z-index: 1;
     }
     .menu img {
@@ -46,7 +45,6 @@
         width: 47px;
     }
     
-    /*Objetos Main*/
     main {
         background-color: var(--branco);
         display: flex;
@@ -64,16 +62,17 @@
         justify-content: flex-start;
         align-items: center;
         gap: 15px;
-        width: 385px;
-        height: 200px;
+        width: 90vw;
+        height: auto;       
         border-radius: 10px;
         box-shadow: 0 5px 9px rgba(0,0,0,0.1);
         margin-top: 15px;
     }
 
     .caixaproduto .imagem img {
-        width: 140px;
-        height: 150px;
+        width: 35vw;
+        height: auto;
+        max-width: 130px;
     }
 
     .caixaproduto .info {
@@ -143,7 +142,6 @@
         font-size: 22px;
     }
 
-    /*Objetos Footer*/
     footer {
         background-color: var(--branco);
         display: flex;
