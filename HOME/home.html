@@ -1,175 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iluminação Premium - Transforme seu Ambiente</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="../geral.css">
 </head>
 <body>
     <header>
-        <a href="" class="menu"><img src="../assets/images/menu.png" alt=""></a>
-        <a href="" class="logo"><img src="../assets/images/logo_azul.png" alt=""></a>
-        <a href="" class="user"><img src="../assets/images/usuario.png" alt=""></a>
+        <button class="menu" aria-label="Menu de navegação">
+            <img src="../assets/images/menu.png" alt="">
+        </button>
+        <a href="/" class="logo">
+            <img src="../assets/images/logo_azul.png" alt="Logo Iluminação Premium">
+        </a>
+        <a href="/perfil" class="user" aria-label="Área do usuário">
+            <img src="../assets/images/usuario.png" alt="">
+        </a>
     </header>
+
     <main>
-        <div class="promocao"></div>
-        <div class="promocoes">
-            <div class="promo1">Promoção 1</div>
-            <div class="promo2">Promoção 2</div>
-            <div class="promo3">Promoção 3</div>
-        </div>
+        <section class="hero-banner">
+            <div class="banner-content">
+                <span class="badge-destaque">Novidade</span>
+                <h1 class="banner-title">Iluminação Inteligente</h1>
+                <p class="banner-subtitle">Até 40% OFF em produtos selecionados</p>
+            </div>
+        </section>
+
+        <section class="promocoes-grid">
+            <article class="promo-card promo1">
+                <div class="promo-overlay">
+                    <h3>LED Smart</h3>
+                    <span class="promo-tag">-30%</span>
+                </div>
+            </article>
+            <article class="promo-card promo2">
+                <div class="promo-overlay">
+                    <h3>Spots</h3>
+                    <span class="promo-tag">-25%</span>
+                </div>
+            </article>
+            <article class="promo-card promo3">
+                <div class="promo-overlay">
+                    <h3>Luminárias</h3>
+                    <span class="promo-tag">-35%</span>
+                </div>
+            </article>
+        </section>
         
-        <div class="maisVendidos">
-            <p>Produtos mais vendidos</p>
-        </div>
-        <!-- CARROSSEL 1 -->    
-        <div class="carrossel">
-            <div class="carrossel-container">
-                <div class="produtos" id="carrosselTrack1">
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
+        <section class="secao-produtos">
+            <div class="secao-header">
+                <h2>Mais Vendidos</h2>
+                <a href="/mais-vendidos" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <div class="produtos" id="carrosselTrack1">
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                                <span class="badge-novo">Novo</span>
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="maisVendidos">
-            <p>Mais vendidos em eletrodomésticos</p>
-        </div>
-        <!--CARROSSEL 2 -->
-        <div class="carrossel">
-            <div class="carrossel-container">
-                <div class="produtos" id="carrosselTrack2">
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
+        </section>
+
+        <section class="secao-produtos">
+            <div class="secao-header">
+                <h2>Iluminação Residencial</h2>
+                <a href="/residencial" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <div class="produtos" id="carrosselTrack2">
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="maisVendidos">
-            <p>Mais vendidos em áudio e vídeo</p>
-        </div>
-        <!--CARROSSEL 3-->
-        <div class="carrossel">
-            <div class="carrossel-container">
-                <div class="produtos" id="carrosselTrack3">
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
+        </section>
+
+        <section class="secao-produtos">
+            <div class="secao-header">
+                <h2>Iluminação Comercial</h2>
+                <a href="/comercial" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <div class="produtos" id="carrosselTrack3">
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="promocao_pequena">Promoção Menor</div>
-        <div class="maisVendidos">
-            <p>Produtos de casa</p>
-        </div>
-        <!-- CARROSSEL 4 -->
-        <div class="carrossel">
-            <div class="carrossel-container">
-                <div class="produtos" id="carrosselTrack4">
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
-                    <a href="../PRODUTO/produto.html" class="produto">
-                        <img src="../assets/images/lampada.png" alt="">
-                        <div class="desc">
-                            <p class="nome-produto">Microondas</p>
-                            <h6 class="preco">R$ 100,00</h6>
-                        </div>
-                        <button>+</button>
-                    </a>
+        </section>
+
+        <section class="banner-secundario">
+            <div class="banner-sec-content">
+                <span class="tag-economia">Economize até 80%</span>
+                <h2>Iluminação LED de Baixo Consumo</h2>
+                <p>Durabilidade e eficiência energética</p>
+                <a href="/led" class="btn-banner">Explorar LED</a>
+            </div>
+        </section>
+
+        <section class="secao-produtos">
+            <div class="secao-header">
+                <h2>Iluminação Decorativa</h2>
+                <a href="/decorativa" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <div class="produtos" id="carrosselTrack4">
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                        <a href="../PRODUTO/produto.html" class="produto-card">
+                            <div class="produto-imagem">
+                                <img src="../assets/images/lampada.png" alt="Lâmpada LED">
+                            </div>
+                            <div class="produto-info">
+                                <h3 class="produto-nome">Lâmpada LED Smart</h3>
+                                <div class="produto-preco-wrapper">
+                                    <span class="preco-atual">R$ 89,90</span>
+                                    <span class="preco-antigo">R$ 129,90</span>
+                                </div>
+                                <div class="produto-rating">
+                                    <span class="estrelas">★★★★★</span>
+                                    <span class="avaliacoes">(128)</span>
+                                </div>
+                            </div>
+                            <button class="btn-adicionar" aria-label="Adicionar ao carrinho">
+                                <span class="btn-icon">+</span>
+                                <span class="btn-text">Adicionar</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <a href="" class="botoes" id="marc">
+        <a href="/" class="botao-nav ativo" id="marc" aria-label="Página inicial">
             <img src="../assets/images/home-azul.png" alt="">
+            <span>Início</span>
         </a>
-        <a href="" class="botoes" id="">
+        <a href="/carrinho" class="botao-nav" aria-label="Carrinho de compras">
             <img src="../assets/images/carrinho-cinza.png" alt="">
+            <span>Carrinho</span>
         </a>
-        <a href="" class="botoes" id="">
+        <a href="/favoritos" class="botao-nav" aria-label="Produtos favoritos">
             <img src="../assets/images/salvos-cinza.png" alt="">
+            <span>Favoritos</span>
         </a>
     </footer>
+
     <script src="home.js"></script>
 </body>
 </html>
