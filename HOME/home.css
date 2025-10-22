@@ -11,7 +11,6 @@
         margin-bottom: 100px;
     }
 
-
     .promocoes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -38,8 +37,11 @@
     .promocao {
         height: 150px;
         width: 350px;
-        background-color: var(--AU700);
+        background-image: url(../assets/images/promocao.png);
+        background-size: cover;
         border-radius: 10px;
+        margin-top: 20px;
+
     }
 
 
