@@ -20,7 +20,7 @@ main {
 
 section {
     width: 100%;
-    height: 65%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ section {
     gap: 10px;
 }
 .imgCompra {
-    height: 70%;
+    height: 90%;
     width: 90%;
     background-image: url(/assets/images/bulbe-ex-produto.png);
     background-position: center;
@@ -45,13 +45,19 @@ section {
     font-weight: bold;
 }
 
-.textoAgradecimento > a {
-    text-decoration: none;
+.textoCompra{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: var(--AC600);
 }
-
 .botaoRastreio {
     width: 90%;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +88,7 @@ nav {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    column-gap: 20px;
     
 }
 
