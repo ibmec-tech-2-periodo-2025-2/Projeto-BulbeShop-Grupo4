@@ -80,10 +80,10 @@
         justify-content: center;
         align-items: center;
     }
-    .botoes:hover {
-        border-top: var(--AC700) solid 3px;
-    }
     .botoes img {
         width: 30px;
+    }
+    #marc {
+        border-top: 3px solid var(--AC700);
     }
 }

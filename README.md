@@ -7,8 +7,15 @@ https://www.figma.com/board/9uS1PVsxe0UWDNwACcwJUl/Sprint-1-Projeto-Bulbe?node-i
 Backlog:
 https://docs.google.com/document/d/1CZ5wrlA9mjkTnp5wFri8biepWON3zQm5Nf5Cw_A-dfY/edit?usp=sharing
 
-Dailys:
+Dailies:
 https://docs.google.com/document/d/1lAfZxk55VSfGjrQLFiPmjG53WF4UnVGLaShb2RjSL2o/edit?tab=t.0
+
+Jira: 
+https://gabriel0doornik.atlassian.net/jira/software/projects/SCRUM/summary
+
+Abertura e Fechamento - Sprint 2:
+https://docs.google.com/document/d/1oULzIb3oUTXKz7ZAGv0vZh9q03j-VCKPkvTHfUQhytI/edit?usp=sharing
+
 
 Bulbe — Backlog do Produto (do Sprint 1 até o fim do semestre)
 Este documento consolida o backlog do aplicativo Bulbe com base nos protótipos de baixa fidelidade (login → catálogo/home → detalhe do produto → endereço → entrega/pagamento → confirmação). O formato prioriza narrativa/descrição em vez de tabelas.
