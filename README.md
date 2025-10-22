@@ -4,6 +4,9 @@ Componentes: Bernardo Cerqueira, Emanuel Brandão, Gabriel Fonseca, Gabriel Mont
 Baixa fidelidade:
 https://www.figma.com/board/9uS1PVsxe0UWDNwACcwJUl/Sprint-1-Projeto-Bulbe?node-id=0-1&p=f&t=KWe3uVxchUap200Y-0
 
+Alta fidelidade:
+https://www.figma.com/design/Wm941FxEwAeAn90FL0YhGk/Bulbe----IBMEC--cópia-?node-id=4066-2&p=f&t=xwrLEWbcLh2LOJ0b-0
+
 Backlog:
 https://docs.google.com/document/d/1CZ5wrlA9mjkTnp5wFri8biepWON3zQm5Nf5Cw_A-dfY/edit?usp=sharing
 
