@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.imgCompra {
+    height: 90%;
+    width: 90%;
+    background-image: url(/assets/images/bulbe-ex-produto.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.textoAgradecimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 90%;
+    color: var(--AU700);
+    font-weight: bold;
+}
+
+.textoCompra{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: var(--AC600);
+}
+.botaoRastreio {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botaoRastreio > button {
+    border: none;
+    background-color: var(--AU700);
+    border: 0.5px solid var(--AU900);
+    color: var(--branco);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+}
+
+.imgRecomendacao{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    
+}
+
+#imgRecomendado1 {
+    grid-column: 1/2;
+    background-image: url(/assets/images/bulbe-ex-produto.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#imgRecomendado2 {
+    grid-column: 2/3;
+    background-image: url(/assets/images/bulbe-ex-produto.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#imgRecomendado3 {
+    grid-column: 3/4;
+    background-image: url(/assets/images/bulbe-ex-produto.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.precos {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    height: 50px;
+    gap: 20px;
+    font-size: 12px;
+}
+
+#preco1 {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+
+
+}
+
+#preco2{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+}
+
+#preco3 {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+
+}
+
+#precoCheio1 {
+    grid-row: 1/2;
+    font-weight: medium;
+    font-size: 12px;
+    color: var(--C600)
+
+}
+
+#precoDesconto1 {
+    grid-row: 2/3;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--AU700);
+
+}
+
+#percentualDesconto1 {
+    height: 14px;
+    width: 30px;
+    border-radius: 15px;
+    color: var(--branco);
+    background-color: var(--AU700);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 2px;
+}
+
+#precoCheio2 {
+    grid-row: 1/2;
+    font-weight: medium;
+    font-size: 12px;
+    color: var(--C600)
+
+}
+
+#precoDesconto2 {
+    grid-row: 2/3;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--AU700);
+
+}
+
+#percentualDesconto2 {
+    height: 14px;
+    width: 30px;
+    border-radius: 15px;
+    color: var(--branco);
+    background-color: var(--AU700);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 2px;
+
+
+}
+
+#precoCheio3 {
+    grid-row: 1/2;
+    font-weight: medium;
+    font-size: 12px;
+    color: var(--C600)
+
+}
+
+#precoDesconto3 {
+    grid-row: 2/3;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--AU700);
+
+}
+
+#percentualDesconto3 {
+    height: 14px;
+    width: 30px;
+    border-radius: 15px;
+    color: var(--branco);
+    background-color: var(--AU700);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 2px;
+
+}
+
