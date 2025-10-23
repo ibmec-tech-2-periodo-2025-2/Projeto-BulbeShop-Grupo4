@@ -111,11 +111,6 @@
         position: relative;
     }
 
-    .produto-card:active {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    }
-
     .produto-imagem {
         position: relative;
         width: 100%;
