@@ -59,44 +59,5 @@
     }
     
     /*Objetos Footer*/
-    footer {
-        background-color: var(--branco);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 68px;
-        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1000;
-        padding: 0 12px;
-    }
-    .botao-nav {
-        flex: 1;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-        text-decoration: none;
-        color: var(--C500);
-        position: relative;
-        border-radius: 12px;
-    }
-    .botao-nav img {
-        width: 24px;
-        height: 24px;
-    }
-    .botao-nav span {
-        font-size: 11px;
-        font-weight: 500;
-    }
-    .botao-nav.ativo {
-        color: var(--AU700);
-        position: relative;
-    }
 
 }
