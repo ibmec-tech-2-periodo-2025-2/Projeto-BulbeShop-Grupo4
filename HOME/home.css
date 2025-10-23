@@ -1,4 +1,18 @@
 @media (max-width: 440px) {
+    :root {
+        --branco: #FFFFFF;
+        --preto: #000000;
+        --C25: #F6F9F9; --C50: #E1E6EA; --C100: #D1D9E0; --C200: #C2CCD6; --C300: #A4B3C1; --C400: #8699AC; --C500: #678098; --C600: #536679; --C700: #3E4D5B; --C800: #29333D; --C900: #151A1E;
+        --AU50: #E7E7FE; --AU100: #CFCEFD; --AU200: #9F9DFB; --AU300: #6E6CF9; --AU400: #3E3BF7; --AU500: #0E0AF5; --AU600: #0B08C4; --AU700: #08068D; --AU800: #060462; --AU900: #030231; 
+        --VF50: #E9FBF2; --VF100: #D4F7E6; --VF200: #A9EFCC; --VF300: #7EE7B3; --VF400: #53DF99; --VF500: #26D07C; --VF600: #20AC66; --VF700: #18814D; --VF800: #105633; --VF900: #082B1A;
+        --AC50: #E6F1FE; --AC100: #CEE4FD; --AC200: #9DC9FB; --AC300: #6BAEFA; --AC400: #3A93F8; --AC500: #0978F6; --AC600: #0762C7; --AC700: #054894; --AC800: #043062; --AC900: #021831;
+        --AS50: #FFF4E6; --AS100: #FFE9CC; --AS200: #FFD399; --AS300: #FFC880; --AS400: #FFA733; --AS500: #FF9E1B; --AS600: #CC7400; --AS700: #995700; --AS800: #663A00; --AS900: #331D00;
+        --A50: #FFFAEB; --A100: #FEF0C7; --A200: #FEDF89; --A300: #FEC84B; --A400: #FDB022; --A500: #F79009; --A600: #DC6803; --A700: #B54708; --A800: #93370D; --A900: #7A2E0E;
+        --E50: #FEF3F2; --E100: #FEE4E2; --E200: #FECDCA; --E300: #FDA29B; --E400: #F97066; --E500: #F04438; --E600: #D92D20; --E700: #B42318; --E800: #912018; --E900: #7A271A;
+        --S50: #ECFDF3; --S100: #D1FADF; --S200: #A6F4C5; --S300: #6CE9A6; --S400: #32D583; --S500: #12B76A; --S600: #039855; --S700: #027A48; --S800: #05603A; --S900: #054F31;
+        --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
+    }
+    
     /*Objetos Main*/
     main {
         background-color: var(--branco);
@@ -66,68 +80,164 @@
     .maisVendidos p {
         margin-left: 5px;
     }
-    .carrossel {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }  
-    .carrossel-container {
-        width: 310px;
-        overflow: hidden;
-        touch-action: pan-y;
-        cursor: grab;
-    }
-    .carrossel-container:active {
-        cursor: grabbing;
-    }
-    .produtos {
-        display: flex;
-        height: 250px;
-        gap: 15px;
-        padding: 20px 0;
-        padding-top: 0;
-        transition: transform 0.3s ease;
-    }
-    .produto {
-        width: 145px;
+    /* ===== CARROSSEL ===== */
+                        .carrossel {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            justify-content: center;
+                        }
+                       
+                        .carrossel-container {
+                            width: 100%;
+                            max-width: 340px;
+                            overflow: hidden;
+                            touch-action: pan-y;
+                            cursor: grab;
+                            padding: 0 20px;
+                        }
+                       
+                        .carrossel-container:active {
+                            cursor: grabbing;
+                        }
+                       
+                        .produtos {
+                            display: flex;
+                            gap: 16px;
+                            padding: 12px 0 24px 0;
+                            transition: transform 0.3s ease;
+                            will-change: transform;
+                        }
+
+
+                        /* ===== CARD DE PRODUTO ===== */
+    .produto-card {
+        width: 160px;
         flex-shrink: 0;
-        box-shadow: 1px 1px 5px -3px black;
-        border-radius: 5px;
+        background-color: var(--branco);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px -10px var(--AU500);
         display: flex;
-        align-items: center;
         flex-direction: column;
-        gap: 20px;
-        padding: 10px;
         text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        position: relative;
     }
-    .produto img {
-        width: 100px;
-        height: auto;
-    }
-    .desc {
+
+    .produto-imagem {
+        position: relative;
+        width: 100%;
+        height: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 16px;
+    }
+
+    .produto-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .produto-info {
+        padding: 12px;
+        flex: 1;
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 8px;
     }
-    .nome-produto {
-        font-size: 15px;
+
+
+    .produto-nome {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--C900);
+        margin: 0;
+        line-height: 1.3;
+        overflow: hidden;
+        min-height: 36px;
     }
-    .preco {
+
+
+    .produto-preco-wrapper {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+
+    .preco-atual {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--AU700);
+    }
+
+
+    .preco-antigo {
+        font-size: 13px;
+        color: var(--C400);
+        text-decoration: line-through;
+    }
+
+
+    .produto-avaliacao {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: auto;
+    }
+
+
+    .estrelas {
+        color: var(--A500);
         font-size: 12px;
-        font-weight: 1000;
+        letter-spacing: -1px;
     }
-    .produto button {
-        height: 20px;
-        width: 110px;
-        color: var(--branco);
+
+    .avaliacoes {
+        font-size: 11px;
+        color: var(--C500);
+    }
+
+    .btn-adicionar {
+        width: calc(100% - 24px);
+        margin: 0 12px 12px 12px;
+        height: 36px;
         background-color: var(--AU700);
-        border-radius: 30px;
-        margin-bottom: 20px;
+        color: var(--branco);
         border: none;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        box-shadow: 0 2px 8px rgba(8, 6, 141, 0.25);
     }
+
+
+    .btn-adicionar:active {
+        transform: scale(0.96);
+        box-shadow: 0 1px 4px rgba(8, 6, 141, 0.3);
+    }
+
+
+    .btn-icon {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+    .btn-text {
+        font-size: 13px;
+    }
+
     .promocao_pequena {
         height: 110px;
         width: 350px;
