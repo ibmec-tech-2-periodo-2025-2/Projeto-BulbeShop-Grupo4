@@ -153,33 +153,4 @@
     .controle .adicionar {
         font-size: 22px;
     }
-
-
-    footer {
-        background-color: var(--branco);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 60px;
-        box-shadow: 0 -1px 10px -5px var(--preto);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        gap: 40px;
-    }
-    .botoes {
-        height: 60px;
-        width: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .botoes:hover {
-        border-top: var(--AC700) solid 3px;
-    }
-    .botoes img {
-        width: 30px;
-    }
 }
