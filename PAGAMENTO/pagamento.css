@@ -93,9 +93,6 @@
         color: var(--AC700);
     }
     #seletor{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 90%;
         height: 30px;
         border-radius: 8px;
