@@ -15,6 +15,9 @@
     main{
         gap: 30px;
     }
+    body{
+        background-color: #F8F8FF;
+    }
     .entrega{
         margin-top: 40px;
         border-bottom: 2px solid var(--AC700);
@@ -77,7 +80,7 @@
         justify-content: center;
         width: 80%;
         height: 50px;
-        border-radius: 20px;
+        border-radius: 8px;
         cursor: pointer;
     }
     .corpo_pagamento{
@@ -89,4 +92,13 @@
         margin: -18px;
         color: var(--AC700);
     }
+    #seletor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 30px;
+        border-radius: 8px;
+    }
+    
 }
