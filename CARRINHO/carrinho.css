@@ -31,13 +31,11 @@
         margin-top: 15px;
     }
 
-
     .caixaproduto .imagem img {
         width: 35vw;
         height: auto;
         max-width: 130px;
     }
-
 
     .caixaproduto .info {
         display: flex;
@@ -46,25 +44,34 @@
         gap: 4px;
     }
 
-
     .caixaproduto .info h2 {
         color: var(--AU800);
         font-size: 19px;
+        margin-bottom: -9px;
     }
-
 
     .caixaproduto .info p {
         font-size: 13px;
     }
 
+    .avaliacao {
+        display: flex;
+        gap: 4px;
+        margin: 3px 0 6px 0;
+    }
+
+    .avaliacao img {
+        width: 16px;
+        height: 16px;
+    }
 
     .caixaproduto .info .preco {
-        margin-top: 20px;
+        margin-top: 11px;
+        margin-bottom: 16px;
         font-size: 19px;
         font-weight: bold;
         color: var(--AU800)
     }
-
 
     .caixaproduto .seta {
         position: absolute;
@@ -74,7 +81,6 @@
         bottom: 15px;
         cursor: pointer;
     }
-
 
     .controle {
         border: 2px solid var(--M8);
@@ -87,7 +93,6 @@
         margin-top: 12px;
     }
 
-
     .controle button {
         background: none;
         border: none;
@@ -97,19 +102,16 @@
         cursor: pointer;
     }
 
-
     .controle button img {
         width: 15px;
         height: 15px;
     }
-
 
     .controle .quantidade {
         font-size: 16px;
         font-weight: 600;
         color: var(--C900);
     }
-
 
     .controle .adicionar {
         font-size: 22px;
