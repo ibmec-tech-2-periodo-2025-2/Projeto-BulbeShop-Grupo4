@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lâmpada LED Smart - Iluminação Premium</title>
     <link rel="stylesheet" href="produto.css">
     <link rel="stylesheet" href="../geral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +16,9 @@
         <a href="../HOME/home.html" class="logo"><img src="../assets/images/logo_azul.png" alt=""></a>
         <a href="" class="user"><img src="../assets/images/usuario.png" alt=""></a>
     </header>
+
     <main>
+        <!-- Galeria de Imagens -->
         <div class="carrossel">
             <div class="slides">
                 <img src="../assets/images/lampada.png" class="ativo">
@@ -26,28 +28,64 @@
             <button class="btn-anterior">&#10094;</button>
             <button class="btn-proximo">&#10095;</button>
         </div>
-        <div class="prodest">
-        <div class="texto-prod"><b><h2>Produto</h2><b></div>
-        <div class="estrelas"><img src="../assets/images/estrela.png" alt=""><img src="../assets/images/estrela.png" alt=""><img src="../assets/images/estrela.png" alt=""><img src="../assets/images/estrela.png" alt=""><img src="../assets/images/estrela.png" alt=""></div>
-            <div>
-        <div class="preco-ant">
-            <s>R$69,00</s>
-            <div class="desc">-20%</div>
+
+        <!-- Informações do Produto -->
+        <section class="info-produto">
+            <div class="produto-header">
+                
+                <h1 class="produto-titulo">Lâmpada LED Smart RGB</h1>
+                
+                <div class="produto-rating">
+                    <div class="estrelas">
+                        <img src="../assets/images/estrela.png" alt="">
+                        <img src="../assets/images/estrela.png" alt="">
+                        <img src="../assets/images/estrela.png" alt="">
+                        <img src="../assets/images/estrela.png" alt="">
+                        <img src="../assets/images/estrela.png" alt="">
+                    </div>
+                    <span class="rating-numero">4.8</span>
+                    <span class="rating-reviews">(2.847 avaliações)</span>
+                </div>
+            </div>
+
+            <!-- Preço -->
+            <div class="secao-preco">
+                <div class="preco-linha">
+                    <div class="preco-container">
+                        <span class="preco-antigo">R$ 129,90</span>
+                        <span class="badge-desconto">-31%</span>
+                    </div>
+                </div>
+                <div class="preco-principal">
+                    <span class="preco-atual">R$ 89,90</span>
+                    <span class="preco-parcela">ou 3x de R$ 29,97</span>
+                </div>
+                <div class="economia-info">
+                    <span>Você economiza R$ 40,00 nesta compra</span>
+                </div>
+            </div>
+
+            <!-- Descrição -->
+            <div class="secao-descricao">
+                <h2 class="secao-titulo">Sobre o produto</h2>
+                <p class="descricao-texto">
+                    Controle a luz de qualquer lugar através do aplicativo, ajuste brilho e cor, e crie o clima perfeito para cada momento. Tecnologia smart para deixar sua casa mais inteligente e conectada.
+                </p>
+            </div>
+
+            <!-- Controles de Compra -->
+        <div class="produto-controles">
+            <div class="quantidade-container">
+                <button class="quantidade-btn" id="diminuir">−</button>
+                <span class="quantidade-texto">Quantidade: <span id="quantidade">1</span></span>
+                <button class="quantidade-btn" id="aumentar">+</button>
+            </div>
+            <a href="../ENDEREÇO/endereco.html" class="btn-comprar">Comprar</a>
         </div>
-        <div class="preco-novo">
-            <div class="preco-text">R$60,00</div>
-           <div class="uni"> P/ unidade</div>
-    </div>
-    <div class="descri">Controle a luz de qualquer lugar, ajuste brilho e cor, e crie o clima perfeito. Sua casa mais inteligente e conectada.</div>
-    <div class="produto-controles">
-  <div class="quantidade-container">
-    <button class="quantidade-btn" id="diminuir">−</button>
-    <span class="quantidade-texto">Quantidade: <span id="quantidade">1</span></span>
-    <button class="quantidade-btn" id="aumentar">+</button>
-  </div>
-  <a href="../ENDEREÇO/endereco.html" class="btn-comprar">Comprar</a>
-</div>
+        </section>
     </main>
+
+    <!-- Footer Fixo com Botões -->
     <footer>
         <a href="../HOME/home.html" class="botao-nav" aria-label="Página inicial">
             <img src="../assets/images/home-cinza.png" alt="">
@@ -62,6 +100,7 @@
             <span>Favoritos</span>
         </a>
     </footer>
+
+    <script src="produto.js"></script>
 </body>
-<script src="produto.js"></script>
 </html>
