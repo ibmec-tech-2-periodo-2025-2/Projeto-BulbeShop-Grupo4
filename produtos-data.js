@@ -652,7 +652,6 @@ const PRODUTOS_DB = [
         categoriaHome: "assistentes"
     }
 ];
-
 // ===== FUNÇÕES AUXILIARES =====
 
 function buscarProdutoPorId(id) {
@@ -682,6 +681,10 @@ function formatarPreco(valor) {
 function calcularPrecoComDesconto(preco, desconto) {
     if (!desconto || desconto === 0) return preco;
     return preco * (1 - desconto / 100);
+}
+
+function buscarProdutosNovos() {
+    return PRODUTOS_DB.filter(produto => produto.novo === true);
 }
 
 function buscarProdutosComDesconto() {
