@@ -78,8 +78,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        height: 50px;
+        width: 90%;
+        height: 57px;
         border-radius: 8px;
         cursor: pointer;
     }
@@ -94,8 +94,12 @@
     }
     #seletor{
         width: 90%;
-        height: 30px;
+        height: 57px;
         border-radius: 8px;
+        font-size: large;
+        color: var(--C300);
+        border: 1px solid var(--C300);
+        padding-left: 45px;
     }
     
 }
