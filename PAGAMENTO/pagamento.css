@@ -19,31 +19,6 @@
     body{
         background-color: #F8F8FF;
     }
-    .entrega{
-        margin-top: 40px;
-        border-bottom: 2px solid var(--AC700);
-        /* background-color: var(--AC700); */
-        color: var(--AC700);
-        font-size: large;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 67%;
-        height: 50px;
-        font-weight: 550;
-    }
-    .pagamento{
-        border-bottom: 2px solid var(--AC700);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* background-color: var(--AC700); */
-        color: var(--AC700);
-        font-size: large;
-        width: 67%;
-        height: 50px;
-        font-weight: 550;
-    }
     .d_entregas{
         display: flex;
         flex-direction: column;
@@ -61,15 +36,6 @@
         flex-direction: column;
         gap: 5px;
         width: 90%;
-    }
-    .botao{
-        border:none;
-        background-color: var(--branco);
-        box-shadow: 0 1px 10px -5px var(--preto);
-        border-radius: 20px;
-        width: 65%;
-        height: 60px;
-        cursor: pointer;
     }
     .b_confirmar{
         margin-top: 60px;
