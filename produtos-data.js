@@ -436,7 +436,7 @@ const PRODUTOS_DB = [
         imagem: "assets/images/interruptor-1.png",
         imagemDetalhes: "assets/images/interruptor-1.png",
         avaliacao: 4.6,
-        totalAvaliacoes: 156
+        totalAvaliacoes: 156,
         destaque: true,
         maisVendido: false,
         categoriaHome: "acessorios"
@@ -693,4 +693,33 @@ function buscarPorFaixaPreco(min, max) {
         const precoFinal = calcularPrecoComDesconto(produto.preco, produto.desconto);
         return precoFinal >= min && precoFinal <= max;
     });
+}
+
+function ordenarPorPrecoMenor(produtos) {
+    return produtos.sort((a, b) => {
+        const precoA = calcularPrecoComDesconto(a.preco, a.desconto);
+        const precoB = calcularPrecoComDesconto(b.preco, b.desconto);
+        return precoA - precoB;
+    });
+}
+
+function ordenarPorPrecoMaior(produtos) {
+    return produtos.sort((a, b) => {
+        const precoA = calcularPrecoComDesconto(a.preco, a.desconto);
+        const precoB = calcularPrecoComDesconto(b.preco, b.desconto);
+        return precoB - precoA;
+    });
+}
+
+function ordenarPorAvaliacao(produtos) {
+    return produtos.sort((a, b) => b.avaliacao - a.avaliacao);
+}
+
+function pesquisarProdutos(termo) {
+    termo = termo.toLowerCase();
+    return PRODUTOS_DB.filter(produto => 
+        produto.nome.toLowerCase().includes(termo) ||
+        produto.descricao.toLowerCase().includes(termo) ||
+        produto.categoria.toLowerCase().includes(termo)
+    );
 }
