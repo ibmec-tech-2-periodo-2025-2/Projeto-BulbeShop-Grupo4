@@ -1,25 +1,176 @@
-// Array para guardar o índice de cada carrossel
+// ===== CONTROLE DOS CARROSSÉIS =====
 let indices = [0, 0, 0, 0];
-const produtoWidth = 160;
+const produtoWidth = 176; // 160px + 16px de gap
 
 // Variáveis para controle do toque
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
 
-// Função para inicializar cada carrossel
+// ===== RENDERIZAR PRODUTOS NOS CARROSSÉIS =====
+
+// Função que cria o HTML de um card de produto
+function criarCardProduto(produto) {
+    // Calcula preço com desconto
+    const precoFinal = calcularPrecoComDesconto(produto.preco, produto.desconto);
+    const precoFormatado = formatarPreco(precoFinal);
+    
+    // Define se mostra preço antigo
+    const precoAntigoHTML = produto.desconto > 0 
+        ? `<span class="preco-antigo">${formatarPreco(produto.preco)}</span>`
+        : '';
+    
+    // Cria estrelas (baseado na avaliação)
+    const estrelasCompletas = Math.floor(produto.avaliacao);
+    const estrelas = '★'.repeat(estrelasCompletas) + '☆'.repeat(5 - estrelasCompletas);
+    
+    // Retorna o HTML do card
+    return `
+        <a href="../PRODUTO/produto.html?id=${produto.id}" class="produto-card">
+            ${produto.novo ? '<span class="badge-novo">NOVO</span>' : ''}
+            ${produto.desconto > 0 ? `<span class="badge-desconto">-${produto.desconto}%</span>` : ''}
+            
+            <div class="produto-imagem">
+                <img src="../${produto.imagem}" alt="${produto.nome}" onerror="this.src='../assets/images/placeholder.png'">
+            </div>
+            
+            <div class="produto-info">
+                <h3 class="produto-nome">${produto.nome}</h3>
+                
+                <div class="produto-preco-wrapper">
+                    <span class="preco-atual">${precoFormatado}</span>
+                    ${precoAntigoHTML}
+                </div>
+                
+                <div class="produto-avaliacao">
+                    <span class="estrelas">${estrelas}</span>
+                    <span class="avaliacoes">(${produto.totalAvaliacoes})</span>
+                </div>
+            </div>
+            
+            <button class="btn-adicionar" onclick="event.preventDefault(); adicionarAoCarrinho(${produto.id})" aria-label="Adicionar ao carrinho">
+                <span class="btn-icon">+</span>
+                <span class="btn-text">Adicionar</span>
+            </button>
+        </a>
+    `;
+}
+
+// Função para preencher um carrossel
+function preencherCarrossel(trackId, produtos) {
+    const track = document.getElementById(trackId);
+    
+    if (!track) {
+        console.error(`Carrossel ${trackId} não encontrado!`);
+        return;
+    }
+    
+    // Limpa conteúdo anterior
+    track.innerHTML = '';
+    
+    // Adiciona cada produto
+    produtos.forEach(produto => {
+        track.innerHTML += criarCardProduto(produto);
+    });
+}
+
+// ===== FUNÇÃO PARA ADICIONAR AO CARRINHO =====
+function adicionarAoCarrinho(idProduto) {
+    const produto = buscarProdutoPorId(idProduto);
+    
+    if (!produto) {
+        alert('Produto não encontrado!');
+        return;
+    }
+    
+    // Busca carrinho atual do localStorage
+    let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+    
+    // Verifica se produto já está no carrinho
+    const itemExistente = carrinho.find(item => item.id === idProduto);
+    
+    if (itemExistente) {
+        // Incrementa quantidade
+        itemExistente.quantidade += 1;
+        alert(`${produto.nome} - Quantidade atualizada no carrinho!`);
+    } else {
+        // Adiciona novo item
+        carrinho.push({
+            id: idProduto,
+            quantidade: 1
+        });
+        alert(`${produto.nome} adicionado ao carrinho!`);
+    }
+    
+    // Salva no localStorage
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    
+    // Atualiza contador do carrinho (se tiver)
+    atualizarContadorCarrinho();
+}
+
+// Atualiza contador do carrinho no footer/header
+function atualizarContadorCarrinho() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+    const totalItens = carrinho.reduce((sum, item) => sum + item.quantidade, 0);
+    
+    // Se tiver badge de contador, atualiza
+    const badge = document.getElementById('carrinho-contador');
+    if (badge) {
+        badge.textContent = totalItens;
+        badge.style.display = totalItens > 0 ? 'flex' : 'none';
+    }
+}
+
+// ===== INICIALIZAÇÃO DA PÁGINA =====
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Carregando produtos...');
+    console.log('Total de produtos:', PRODUTOS_DB.length);
+    
+    // CARROSSEL 1: Mais Vendidos
+    const maisVendidos = buscarMaisVendidos();
+    console.log('Mais vendidos:', maisVendidos.length);
+    preencherCarrossel('carrosselTrack1', maisVendidos);
+    
+    // CARROSSEL 2: Eletrodomésticos
+    const eletrodomesticos = buscarPorCategoriaHome('eletrodomesticos');
+    console.log('Eletrodomésticos:', eletrodomesticos.length);
+    preencherCarrossel('carrosselTrack2', eletrodomesticos);
+    
+    // CARROSSEL 3: Produtos de Casa
+    const casa = buscarPorCategoriaHome('casa');
+    console.log('Casa:', casa.length);
+    preencherCarrossel('carrosselTrack3', casa);
+    
+    // CARROSSEL 4: Em Destaque
+    const destaque = buscarProdutosDestaque();
+    console.log('Destaque:', destaque.length);
+    preencherCarrossel('carrosselTrack4', destaque);
+    
+    // Inicializa controle de arrastar nos carrosséis
+    inicializarCarrossel('carrosselTrack1', 0);
+    inicializarCarrossel('carrosselTrack2', 1);
+    inicializarCarrossel('carrosselTrack3', 2);
+    inicializarCarrossel('carrosselTrack4', 3);
+    
+    // Atualiza contador do carrinho
+    atualizarContadorCarrinho();
+    
+    console.log('✅ Produtos carregados com sucesso!');
+});
+
+// ===== CONTROLE DE ARRASTAR OS CARROSSÉIS =====
+
 function inicializarCarrossel(trackId, carrosselIndex) {
     const track = document.getElementById(trackId);
     const container = track.parentElement;
     
-    // Evento quando começa a tocar
     container.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
         isDragging = true;
         track.style.transition = 'none';
     });
     
-    // Evento enquanto arrasta
     container.addEventListener('touchmove', (e) => {
         if (!isDragging) return;
         
@@ -30,7 +181,6 @@ function inicializarCarrossel(trackId, carrosselIndex) {
         track.style.transform = `translateX(${currentTranslate + diff}px)`;
     });
     
-    // Evento quando solta o toque
     container.addEventListener('touchend', () => {
         if (!isDragging) return;
         isDragging = false;
@@ -50,7 +200,6 @@ function inicializarCarrossel(trackId, carrosselIndex) {
     });
 }
 
-// Função de movimento
 function moverCarrossel(direcao, trackId, carrosselIndex) {
     const track = document.getElementById(trackId);
     const totalProdutos = track.children.length;
@@ -63,9 +212,3 @@ function moverCarrossel(direcao, trackId, carrosselIndex) {
 
     track.style.transform = `translateX(-${indices[carrosselIndex] * produtoWidth}px)`;
 }
-
-// Inicialize os 4 carrosséis
-inicializarCarrossel('carrosselTrack1', 0);
-inicializarCarrossel('carrosselTrack2', 1);
-inicializarCarrossel('carrosselTrack3', 2);
-inicializarCarrossel('carrosselTrack4', 3);
