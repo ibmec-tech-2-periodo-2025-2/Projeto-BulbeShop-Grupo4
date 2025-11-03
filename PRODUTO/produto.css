@@ -645,5 +645,25 @@
         scroll-behavior: smooth;
 
     }
+    .share{
+        display: flex;
+        /* border: #2c4ed8 solid; */
+        align-items: self-end;
+        justify-content: flex-end;
+    }
+    .share img{
+        width: 30px;
+        display: flex;
+        /* border: #2c4ed8 solid; */
+        
+        
+    }
+    .coracao{
+        display: flex;
+    }
+    .coracao img{
+        width: 35px;
+        display: flex;
+    }
 
 }
