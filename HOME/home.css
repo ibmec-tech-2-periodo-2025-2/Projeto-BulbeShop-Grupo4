@@ -3,7 +3,7 @@
         --branco: #FFFFFF;
         --preto: #000000;
         --C25: #F6F9F9; --C50: #E1E6EA; --C100: #D1D9E0; --C200: #C2CCD6; --C300: #A4B3C1; --C400: #8699AC; --C500: #678098; --C600: #536679; --C700: #3E4D5B; --C800: #29333D; --C900: #151A1E;
-        --AU50: #E7E7FE; --AU100: #CFCEFD; --AU200: #9F9DFB; --AU300: #6E6CF9; --AU400: #3E3BF7; --AU500: #0E0AF5; --AU600: #0B08C4; --AU700: #08068D; --AU800: #060462; --AU900: #030231; 
+        --AU50: #E7E7FE; --AU100: #CFCEFD; --AU200: #9F9DFB; --AU300: #6E6CF9; --AU400: #3E3BF7; --AU500: #0E0AF5; --AU600: #0B08C4; --AU700: #08068D; --AU800: #060462; --AU900: #030231;
         --VF50: #E9FBF2; --VF100: #D4F7E6; --VF200: #A9EFCC; --VF300: #7EE7B3; --VF400: #53DF99; --VF500: #26D07C; --VF600: #20AC66; --VF700: #18814D; --VF800: #105633; --VF900: #082B1A;
         --AC50: #E6F1FE; --AC100: #CEE4FD; --AC200: #9DC9FB; --AC300: #6BAEFA; --AC400: #3A93F8; --AC500: #0978F6; --AC600: #0762C7; --AC700: #054894; --AC800: #043062; --AC900: #021831;
         --AS50: #FFF4E6; --AS100: #FFE9CC; --AS200: #FFD399; --AS300: #FFC880; --AS400: #FFA733; --AS500: #FF9E1B; --AS600: #CC7400; --AS700: #995700; --AS800: #663A00; --AS900: #331D00;
@@ -12,8 +12,8 @@
         --S50: #ECFDF3; --S100: #D1FADF; --S200: #A6F4C5; --S300: #6CE9A6; --S400: #32D583; --S500: #12B76A; --S600: #039855; --S700: #027A48; --S800: #05603A; --S900: #054F31;
         --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
     }
-    
-    /*Objetos Main*/
+   
+    /* Objetos Main */
     main {
         background-color: var(--branco);
         display: flex;
@@ -36,7 +36,6 @@
         overflow: hidden;
     }
 
-
     .banner-content {
         position: relative;
         z-index: 1;
@@ -57,6 +56,7 @@
         margin-bottom: 12px;
     }
 
+
     .banner-title {
         font-size: 28px;
         font-weight: 700;
@@ -65,6 +65,7 @@
         letter-spacing: -0.5px;
     }
 
+
     .banner-subtitle {
         font-size: 15px;
         color: rgba(255, 255, 255, 0.9);
@@ -72,58 +73,65 @@
         font-weight: 500;
     }
 
-    .maisVendidos {
+
+    .secao-titulo {
         width: 100vw;
         margin-left: 40px;
         border-left: 5px solid var(--AU700);
     }
-    .maisVendidos p {
+   
+    .secao-titulo p {
         margin-left: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--C900);
     }
+
+
     /* ===== CARROSSEL ===== */
-                        .carrossel {
-                            display: flex;
-                            align-items: center;
-                            width: 100%;
-                            justify-content: center;
-                        }
-                       
-                        .carrossel-container {
-                            width: 100%;
-                            max-width: 340px;
-                            overflow: hidden;
-                            touch-action: pan-y;
-                            cursor: grab;
-                            padding: 0 20px;
-                        }
-                       
-                        .carrossel-container:active {
-                            cursor: grabbing;
-                        }
-                       
-                        .produtos {
-                            display: flex;
-                            gap: 16px;
-                            padding: 12px 0 24px 0;
-                            transition: transform 0.3s ease;
-                            will-change: transform;
-                        }
+    .carrossel {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+   
+    .carrossel-container {
+        width: 100%;
+        max-width: 340px;
+        overflow: hidden;
+        touch-action: pan-y;
+        cursor: grab;
+        padding: 0 20px;
+    }
+   
+    .carrossel-container:active {
+        cursor: grabbing;
+    }
+   
+    .produtos {
+        display: flex;
+        gap: 16px;
+        padding: 12px 0 24px 0;
+        transition: transform 0.3s ease;
+        will-change: transform;
+    }
 
 
-                        /* ===== CARD DE PRODUTO ===== */
+    /* ===== CARD DE PRODUTO ===== */
     .produto-card {
         width: 160px;
         flex-shrink: 0;
         background-color: var(--branco);
         border-radius: 16px;
         overflow: hidden;
-        box-shadow: 0 2px 12px -10px var(--AU500);
+        border: 2px solid var(--C100);
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
         position: relative;
     }
+
 
     .produto-imagem {
         position: relative;
@@ -135,11 +143,13 @@
         padding: 16px;
     }
 
+
     .produto-imagem img {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
+
 
     .produto-info {
         padding: 12px;
@@ -163,9 +173,9 @@
 
     .produto-preco-wrapper {
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 6px;
-        flex-wrap: wrap;
     }
 
 
@@ -177,9 +187,10 @@
 
 
     .preco-antigo {
-        font-size: 13px;
+        font-size: 12px;
         color: var(--C400);
         text-decoration: line-through;
+        font-weight: 400;
     }
 
 
@@ -197,6 +208,7 @@
         letter-spacing: -1px;
     }
 
+
     .avaliacoes {
         font-size: 11px;
         color: var(--C500);
@@ -213,26 +225,16 @@
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 6px;
-        box-shadow: 0 2px 8px rgba(8, 6, 141, 0.25);
     }
-
-
-    .btn-adicionar:active {
-        transform: scale(0.96);
-        box-shadow: 0 1px 4px rgba(8, 6, 141, 0.3);
-    }
-
 
     .btn-icon {
         font-size: 18px;
         font-weight: 400;
     }
-
 
     .btn-text {
         font-size: 13px;
@@ -243,5 +245,10 @@
         width: 350px;
         background-color: var(--AU700);
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--branco);
+        font-weight: 600;
     }
 }
