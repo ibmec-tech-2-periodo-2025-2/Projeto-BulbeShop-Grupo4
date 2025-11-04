@@ -136,8 +136,8 @@
     }
 
     .badge-desconto {
-        background-color: var(--E500);
-        color: var(--branco);
+        background-color: var(--VF50); 
+        color: var(--VF800);
         padding: 4px 8px;
         border-radius: 8px;
         font-size: 12px;
