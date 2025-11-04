@@ -1,82 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho de Compras - Iluminação Premium</title>
     <link rel="stylesheet" href="carrinho.css">
     <link rel="stylesheet" href="../geral.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="" class="menu"><img src="../assets/images/menu.png" alt=""></a>
-        <a href="../HOME/home.html" class="logo"><img src="../assets/images/logo_azul.png" alt=""></a>
-        <a href="" class="user"><img src="../assets/images/usuario.png" alt=""></a>
+        <a href="" class="menu"><img src="/assets/images/menu.png" alt=""></a>
+        <a href="../HOME/home.html" class="logo"><img src="/assets/images/logo_azul.png" alt=""></a>
+        <a href="" class="user"><img src="/assets/images/usuario.png" alt=""></a>
     </header>
+
     <main>
-        <div class="caixaproduto">
-            <div class="imagem">
-                <img src="../assets/images/img-produto-carrinho.png" alt="">
-            </div>
-            <div class="info">
-                <h2>Produto</h2>
-                <p>Descrição do produto</p>
-                <div class="controle">
-                    <button class="remover">
-                        <img src="../assets/images/lixo.png" alt="">
-                    </button>
-                    <p class="quantidade">1</p>
-                    <button class="adicionar">+</button>
+        <!-- Lista de Produtos -->
+        <section class="lista-produtos">
+            <article class="caixaproduto">
+                <div class="produto-imagem">
+                    <img src="../assets/images/img-produto-carrinho.png" alt="Lâmpada LED Smart">
                 </div>
-                <p class="preco">R$ 54,90</p>
-            </div>
-            <img class="seta" src="../assets/images/seta-direita.png" alt="">
-        </div>
-        <div class="caixaproduto">
-            <div class="imagem">
-                <img src="../assets/images/img-produto-carrinho.png" alt="">
-            </div>
-            <div class="info">
-                <h2>Produto</h2>
-                <p>Descrição do produto</p>
-                <div class="controle">
-                    <button class="remover">
-                        <img src="../assets/images/lixo.png" alt="">
-                    </button>
-                    <p class="quantidade">1</p>
-                    <button class="adicionar">+</button>
+                <div class="produto-info">
+                    <div class="info-header">
+                        <h2 class="produto-nome">Lâmpada LED Smart RGB</h2>
+                    </div>
+                    
+                    <div class="produto-footer">
+                        <div class="controle-quantidade">
+                            <button class="btn-controle remover" aria-label="Diminuir quantidade">
+                                <img src="../assets/images/lixo.png" alt="">
+                            </button>
+                            <span class="quantidade">1</span>
+                            <button class="btn-controle adicionar" aria-label="Aumentar quantidade">+</button>
+                        </div>
+                        <div class="preco-container">
+                            <span class="preco">R$ 89,90</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="preco">R$ 54,90</p>
-            </div>
-            <img class="seta" src="../assets/images/seta-direita.png" alt="">  
-        </div>
-        <div class="caixaproduto">
-            <div class="imagem">
-                <img src="../assets/images/img-produto-carrinho.png" alt="">
-            </div>
-            <div class="info">
-                <h2>Produto</h2>
-                <p>Descrição do produto</p>
-                <div class="controle">
-                    <button class="remover">
-                        <img src="../assets/images/lixo.png" alt="">
-                    </button>
-                    <p class="quantidade">1</p>
-                    <button class="adicionar">+</button>
+            </article>
+
+            <article class="caixaproduto">
+                <div class="produto-imagem">
+                    <img src="../assets/images/img-produto-carrinho.png" alt="Lâmpada LED Smart">
                 </div>
-                <p class="preco">R$ 54,90</p>
+                <div class="produto-info">
+                    <div class="info-header">
+                        <h2 class="produto-nome">Lâmpada LED Smart RGB</h2>
+                    </div>
+                    
+                    <div class="produto-footer">
+                        <div class="controle-quantidade">
+                            <button class="btn-controle remover" aria-label="Diminuir quantidade">
+                                <img src="../assets/images/lixo.png" alt="">
+                            </button>
+                            <span class="quantidade">2</span>
+                            <button class="btn-controle adicionar" aria-label="Aumentar quantidade">+</button>
+                        </div>
+                        <div class="preco-container">
+                            <span class="preco">R$ 179,80</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="caixaproduto">
+                <div class="produto-imagem">
+                    <img src="../assets/images/img-produto-carrinho.png" alt="Lâmpada LED Smart">
+                </div>
+                <div class="produto-info">
+                    <div class="info-header">
+                        <h2 class="produto-nome">Lâmpada LED Smart RGB</h2>
+                    </div>
+                    
+                    <div class="produto-footer">
+                        <div class="controle-quantidade">
+                            <button class="btn-controle remover" aria-label="Diminuir quantidade">
+                                <img src="../assets/images/lixo.png" alt="">
+                            </button>
+                            <span class="quantidade">1</span>
+                            <button class="btn-controle adicionar" aria-label="Aumentar quantidade">+</button>
+                        </div>
+                        <div class="preco-container">
+                            <span class="preco">R$ 89,90</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Resumo do Pedido -->
+        <section class="resumo-pedido">
+            <div class="titulo-resumo">
+                <h2>Resumo do pedido</h2>
             </div>
-            <img class="seta" src="../assets/images/seta-direita.png" alt="">
+
+            <div class="linhas-resumo">
+                <div class="linha-item">
+                    <span class="label">Subtotal</span>
+                    <span class="valor">R$ 359,60</span>
+                </div>
+                <div class="linha-item">
+                    <span class="label">Desconto</span>
+                    <span class="valor">R$ 59,60</span>
+                </div>
+            </div>
+
+            <div class="linha-total">
+                <span class="label-total">Valor total</span>
+                <div class="valores-total">
+                    <span class="valor-antigo"></span>
+                    <span class="valor-atual">R$ 300,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão Finalizar -->
+        <div class="container-botao">
+            <a href="../ENDEREÇO/endereco.html" class="btn-finalizar">
+                Finalizar compra
+            </a>
         </div>
-       
     </main>
+
+    <!-- Footer de Navegação -->
     <footer>
         <a href="../HOME/home.html" class="botao-nav" aria-label="Página inicial">
             <img src="../assets/images/home-cinza.png" alt="">
             <span>Início</span>
         </a>
-        <a href="carrinho.html" class="botao-nav ativo" id="marc" aria-label="Carrinho de compras">
+        <a href="../CARRINHO/carrinho.html" class="botao-nav ativo" id="marc" aria-label="Carrinho de compras">
             <img src="../assets/images/carrinho-azul.png" alt="">
             <span>Carrinho</span>
         </a>
