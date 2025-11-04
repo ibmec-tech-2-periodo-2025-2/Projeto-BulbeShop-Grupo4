@@ -1,5 +1,5 @@
 // ===== CONTROLE DOS CARROSSÉIS =====
-let indices = [0, 0, 0, 0];
+let indices = [0, 0, 0, 0, 0];
 const produtoWidth = 176; // 160px + 16px de gap
 
 // Variáveis para controle do toque
@@ -27,8 +27,6 @@ function criarCardProduto(produto) {
     // Retorna o HTML do card
     return `
         <a href="../PRODUTO/produto.html?id=${produto.id}" class="produto-card">
-            ${produto.novo ? '<span class="badge-novo">NOVO</span>' : ''}
-            ${produto.desconto > 0 ? `<span class="badge-desconto">-${produto.desconto}%</span>` : ''}
             
             <div class="produto-imagem">
                 <img src="../${produto.imagem}" alt="${produto.nome}" onerror="this.src='../assets/images/placeholder.png'">
@@ -127,31 +125,37 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Carregando produtos...');
     console.log('Total de produtos:', PRODUTOS_DB.length);
     
-    // CARROSSEL 1: Mais Vendidos
-    const maisVendidos = buscarMaisVendidos();
-    console.log('Mais vendidos:', maisVendidos.length);
-    preencherCarrossel('carrosselTrack1', maisVendidos);
+    // CARROSSEL 1: Lâmpadas Inteligentes
+    const lampadas = buscarPorCategoriaHome('lampadas');
+    console.log('Lâmpadas:', lampadas.length);
+    preencherCarrossel('carrosselTrack1', lampadas);
     
-    // CARROSSEL 2: Eletrodomésticos
-    const eletrodomesticos = buscarPorCategoriaHome('eletrodomesticos');
-    console.log('Eletrodomésticos:', eletrodomesticos.length);
-    preencherCarrossel('carrosselTrack2', eletrodomesticos);
+    // CARROSSEL 2: Luminárias Inteligentes
+    const luminarias = buscarPorCategoriaHome('luminarias');
+    console.log('Luminárias:', luminarias.length);
+    preencherCarrossel('carrosselTrack2', luminarias);
     
-    // CARROSSEL 3: Produtos de Casa
-    const casa = buscarPorCategoriaHome('casa');
-    console.log('Casa:', casa.length);
-    preencherCarrossel('carrosselTrack3', casa);
+    // CARROSSEL 3: Fitas LED
+    const fitas = buscarPorCategoriaHome('fitas');
+    console.log('Fitas LED:', fitas.length);
+    preencherCarrossel('carrosselTrack3', fitas);
     
-    // CARROSSEL 4: Em Destaque
-    const destaque = buscarProdutosDestaque();
-    console.log('Destaque:', destaque.length);
-    preencherCarrossel('carrosselTrack4', destaque);
+    // CARROSSEL 4: Acessórios de Controle
+    const acessorios = buscarPorCategoriaHome('acessorios');
+    console.log('Acessórios:', acessorios.length);
+    preencherCarrossel('carrosselTrack4', acessorios);
+    
+    // CARROSSEL 5: Assistentes Virtuais
+    const assistentes = buscarPorCategoriaHome('assistentes');
+    console.log('Assistentes:', assistentes.length);
+    preencherCarrossel('carrosselTrack5', assistentes);
     
     // Inicializa controle de arrastar nos carrosséis
     inicializarCarrossel('carrosselTrack1', 0);
     inicializarCarrossel('carrosselTrack2', 1);
     inicializarCarrossel('carrosselTrack3', 2);
     inicializarCarrossel('carrosselTrack4', 3);
+    inicializarCarrossel('carrosselTrack5', 4);    
     
     // Atualiza contador do carrinho
     atualizarContadorCarrinho();

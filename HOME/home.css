@@ -13,7 +13,7 @@
         --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
     }
     
-    /*Objetos Main*/
+    /* Objetos Main */
     main {
         background-color: var(--branco);
         display: flex;
@@ -35,7 +35,6 @@
         position: relative;
         overflow: hidden;
     }
-
 
     .banner-content {
         position: relative;
@@ -72,45 +71,49 @@
         font-weight: 500;
     }
 
-    .maisVendidos {
+    .secao-titulo {
         width: 100vw;
         margin-left: 40px;
         border-left: 5px solid var(--AU700);
     }
-    .maisVendidos p {
+    
+    .secao-titulo p {
         margin-left: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--C900);
     }
+
     /* ===== CARROSSEL ===== */
-                        .carrossel {
-                            display: flex;
-                            align-items: center;
-                            width: 100%;
-                            justify-content: center;
-                        }
-                       
-                        .carrossel-container {
-                            width: 100%;
-                            max-width: 340px;
-                            overflow: hidden;
-                            touch-action: pan-y;
-                            cursor: grab;
-                            padding: 0 20px;
-                        }
-                       
-                        .carrossel-container:active {
-                            cursor: grabbing;
-                        }
-                       
-                        .produtos {
-                            display: flex;
-                            gap: 16px;
-                            padding: 12px 0 24px 0;
-                            transition: transform 0.3s ease;
-                            will-change: transform;
-                        }
+    .carrossel {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+   
+    .carrossel-container {
+        width: 100%;
+        max-width: 340px;
+        overflow: hidden;
+        touch-action: pan-y;
+        cursor: grab;
+        padding: 0 20px;
+    }
+   
+    .carrossel-container:active {
+        cursor: grabbing;
+    }
+   
+    .produtos {
+        display: flex;
+        gap: 16px;
+        padding: 12px 0 24px 0;
+        transition: transform 0.3s ease;
+        will-change: transform;
+    }
 
-
-                        /* ===== CARD DE PRODUTO ===== */
+    /* ===== CARD DE PRODUTO ===== */
     .produto-card {
         width: 160px;
         flex-shrink: 0;
@@ -149,7 +152,6 @@
         gap: 8px;
     }
 
-
     .produto-nome {
         font-size: 14px;
         font-weight: 600;
@@ -160,14 +162,12 @@
         min-height: 36px;
     }
 
-
     .produto-preco-wrapper {
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 6px;
-        flex-wrap: wrap;
     }
-
 
     .preco-atual {
         font-size: 18px;
@@ -175,13 +175,12 @@
         color: var(--AU700);
     }
 
-
     .preco-antigo {
-        font-size: 13px;
+        font-size: 12px;
         color: var(--C400);
         text-decoration: line-through;
+        font-weight: 400;
     }
-
 
     .produto-avaliacao {
         display: flex;
@@ -189,7 +188,6 @@
         gap: 4px;
         margin-top: auto;
     }
-
 
     .estrelas {
         color: var(--A500);
@@ -221,18 +219,15 @@
         box-shadow: 0 2px 8px rgba(8, 6, 141, 0.25);
     }
 
-
     .btn-adicionar:active {
         transform: scale(0.96);
         box-shadow: 0 1px 4px rgba(8, 6, 141, 0.3);
     }
 
-
     .btn-icon {
         font-size: 18px;
         font-weight: 400;
     }
-
 
     .btn-text {
         font-size: 13px;
@@ -243,5 +238,10 @@
         width: 350px;
         background-color: var(--AU700);
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--branco);
+        font-weight: 600;
     }
 }
