@@ -13,6 +13,7 @@
     /* ===== MAIN ===== */
     main {
         min-height: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -24,74 +25,67 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
-        border-radius: 0 0 24px 24px;
-    }
-
-    .container-produto-confirmado {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
+        row-gap: 15px;
     }
 
     .imgCompra {
-        width: 200px;
-        height: 200px;
-        background-image: url(/assets/images/bulbe-ex-produto.png);
+        width: 350px;
+        height: 380px;
+        background-image: url(../assets/images/bulbe-ex-produto.png);
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        padding: 20px;
+        background-size: cover;
+        border-radius: 8px;
     }
 
     .mensagem-sucesso {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
     }
 
     .titulo-sucesso {
         font-size: 28px;
-        font-weight: 700;
+        font-weight: bold;
         color: var(--VF700);
-        margin: 0 0 8px 0;
     }
 
     .subtitulo-sucesso {
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: medium;
         color: var(--C600);
-        margin: 0;
+        margin-bottom: 20px;
     }
 
     .container-acoes {
-        width: 100%;
+        width: 350px;
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
 
     .btn-rastreio {
-        width: 100%;
-        height: 56px;
+        width: 350px;
+        height: 60px;
         background-color: var(--AU700);
         color: var(--branco);
-        border-radius: 16px;
-        font-size: 15px;
-        font-weight: 600;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        border: none;
     }
 
     .btn-continuar {
-        width: 100%;
-        height: 56px;
+        width: 350px;
+        height: 60px;
         background-color: var(--branco);
         color: var(--AU700);
         border: 1px solid var(--AU700);
-        border-radius: 16px;
-        font-size: 15px;
+        border-radius: 8px;
+        font-size: 16px;
         font-weight: 600;
         cursor: pointer;
         display: flex;
@@ -138,7 +132,6 @@
         background-color: var(--branco);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         text-decoration: none;
         transition: all 0.2s ease;
         display: flex;
@@ -147,11 +140,10 @@
 
     .card-recomendacao:active {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
 
     .img-recomendacao {
-        width: 100%;
+  
         height: 100px;
         background-size: contain;
         background-position: center;
@@ -164,7 +156,12 @@
     #imgRecomendado1,
     #imgRecomendado2,
     #imgRecomendado3 {
-        background-image: url(/assets/images/bulbe-ex-produto.png);
+        background-image: url(../assets/images/bulbe-ex-produto.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        height: 130px;
+        width: 100px;
     }
 
     .badge-desconto {
@@ -187,14 +184,12 @@
     }
 
     .nome-recomendacao {
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: medium;
         color: var(--C900);
-        margin: 0;
-        line-height: 1.3;
-        display: -webkit-box;
-        overflow: hidden;
-        min-height: 28px;
+        position: relative;
+        bottom: 10px;
+
     }
 
     .preco-recomendacao {
@@ -204,32 +199,38 @@
     }
 
     .preco-antigo {
-        font-size: 10px;
+        font-size: 12px;
+        font-weight: medium;
         color: var(--C500);
         text-decoration: line-through;
+        position: relative;
+        bottom: 15px;
     }
 
     .preco-atual {
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: bold;
         color: var(--AU700);
+        position: relative;
+        bottom: 19px;
     }
 
     .rating-recomendacao {
         display: flex;
         align-items: center;
-        gap: 4px;
-        margin-top: 4px;
+        column-gap: 4px;
+        position: relative;
+        bottom: 29px;
     }
 
     .estrelas-mini {
         color: var(--A500);
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: -1px;
     }
 
     .reviews-mini {
-        font-size: 10px;
+        font-size: 12px;
         color: var(--C500);
     }
 }
