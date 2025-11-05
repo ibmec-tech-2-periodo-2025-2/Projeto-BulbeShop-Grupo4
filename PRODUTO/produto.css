@@ -247,6 +247,16 @@
         border-radius: 8px;
     }
 
+    .share img{
+        position: absolute;
+        
+        width: 30px;
+    }
+    #coracao{
+        margin-right: 10px ;
+    }
+
+
     /* ===== FOOTER FIXO ===== */
     .footer-produto {
         position: fixed;
