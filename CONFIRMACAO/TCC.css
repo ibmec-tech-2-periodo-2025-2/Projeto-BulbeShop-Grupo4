@@ -138,10 +138,6 @@
         flex-direction: column;
     }
 
-    .card-recomendacao:active {
-        transform: translateY(-2px);
-    }
-
     .img-recomendacao {
   
         height: 100px;
