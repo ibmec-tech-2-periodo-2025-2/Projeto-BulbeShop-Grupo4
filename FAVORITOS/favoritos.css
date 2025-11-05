@@ -5,6 +5,7 @@
         box-sizing: border-box;
     }
 
+
     :root {
         --branco: #FFFFFF;
         --preto: #000000;
@@ -19,67 +20,183 @@
         --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
     }
 
+
     body {
         font-family: 'Poppins';
     }
 
+
+    main {
+        padding-top: 20px;
+    }
+
+
+    .lista-produtos {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+
     .caixaproduto {
         position: relative;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 15px;
-        width: 90vw;        
-        max-width: 385px;  
-        height: auto;      
-        border-radius: 10px;
-        box-shadow: 0 5px 9px rgba(0,0,0,0.1);
-        margin-top: 15px;
-    } 
-
-    .caixaproduto .imagem img {
-        width: 140px;
-        height: 150px;
+        gap: 12px;
+        width: 100%;
+        background-color: var(--branco);
+        border-radius: 16px;
+        padding: 16px;
+        border: 2px solid var(--C100);
     }
 
-    .caixaproduto .info {
+
+    .caixaproduto:active {
+        transform: scale(0.99);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .produto-imagem {
+        flex-shrink: 0;
+        width: 90px;
+        height: 90px;
+        background-color: var(--C25);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+
+
+    .produto-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    .produto-info {
+        flex: 1;
         display: flex;
         flex-direction: column;
+        gap: 8px;
+        min-width: 0;
+    }
+
+
+    .info-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+
+    .produto-nome {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--C900);
+        margin: 0;
+        line-height: 1.3;
+        flex: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+    .produto-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+
+
+    .controle-quantidade {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: var(--C25);
+        border: 2px solid var(--C100);
+        border-radius: 20px;
+        padding: 4px 12px;
+    }
+
+
+    .btn-controle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        gap: 4px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        transition: all 0.2s ease;
     }
 
-    .caixaproduto .info h2 {
-        color: var(--AU800);
-        font-size: 19px;
+
+    .btn-controle.remover img {
+        width: 14px;
+        height: 14px;
     }
 
-    .caixaproduto .info p {
-        font-size: 13px;
+
+    .btn-controle.adicionar {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--AU700);
     }
 
-    .caixaproduto .info .preco {
-        margin-top: 20px;
-        font-size: 19px;
-        font-weight: bold;
-        color: var(--AU800);
+
+    .btn-controle:active {
+        background-color: var(--C100);
+        transform: scale(0.95);
     }
+
+
+    .quantidade {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--C900);
+        min-width: 20px;
+        text-align: center;
+    }
+
+
+    .preco-container {
+        text-align: right;
+    }
+
+
+    .preco {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--AU700);
+        margin: 0;
+    }
+
+
+       .caixaproduto .lixeira {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 83px;
+        right: 55px;
+        cursor: pointer;
+    }
+
 
     .caixaproduto .carrinho {
         position: absolute;
         width: 18px;
         height: 18px;
-        right: 13px;
-        bottom: 10px;
-        cursor: pointer;
-    }
-
-    .caixaproduto .lixeira {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 10px;
-        right: 11px;
+        right: 20px;
+        bottom: 20px;
         cursor: pointer;
     }
 }
