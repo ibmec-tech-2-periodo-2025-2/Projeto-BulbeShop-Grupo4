@@ -105,6 +105,8 @@
         border: 2px solid var(--C100);
         border-radius: 20px;
         padding: 4px 12px;
+        position: relative;
+        top: 30px;
     }
 
     .btn-controle {
@@ -219,7 +221,18 @@
         font-weight: 700;
         color: var(--C900);
     }
+    .estrelas {
+        display: flex;
+        gap: 2px;
+        position: relative;
+        top: 18px;
+        left: 5px;
+    }
 
+    .estrelas img {
+        width: 16px;
+        height: 16px;
+    }
     .valores-total {
         display: flex;
         flex-direction: column;
@@ -233,7 +246,9 @@
         text-decoration: line-through;
         text-decoration-color: var(--preto);
     }
-
+    .valor-desconto{
+        color: forestgreen;
+    }
     .valor-atual {
         font-size: 24px;
         font-weight: 700;
