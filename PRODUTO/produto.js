@@ -28,3 +28,26 @@ function mostrarImagem(novoIndice) {
 
 anterior.addEventListener('click', () => mostrarImagem(indice - 1));
 proximo.addEventListener('click', () => mostrarImagem(indice + 1));
+
+// JavaScript - Lógica da Troca de Imagem
+
+const coracao = document.getElementById('coracao');
+
+const PATH_VAZIO = '../assets/images/coracao.png';
+const PATH_PREENCHIDO = '../assets/images/coracaopre.png';
+
+coracao.addEventListener('click', function() {
+    
+    const srcAtual = coracao.getAttribute('src');
+
+    if (srcAtual.includes('coracao.png')) {
+        
+        coracao.setAttribute('src', PATH_PREENCHIDO);
+        
+    } else {
+        
+        coracao.setAttribute('src', PATH_VAZIO);
+        
+    }
+    
+});
