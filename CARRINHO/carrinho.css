@@ -86,8 +86,6 @@
         margin: 0;
         line-height: 1.3;
         flex: 1;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -233,6 +231,7 @@
         font-size: 14px;
         color: var(--C500);
         text-decoration: line-through;
+        text-decoration-color: var(--preto);
     }
 
     .valor-atual {
