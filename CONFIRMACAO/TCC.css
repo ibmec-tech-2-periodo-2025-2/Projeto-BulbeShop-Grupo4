@@ -31,7 +31,7 @@
     .imgCompra {
         width: 350px;
         height: 380px;
-        background-image: url(/assets/images/bulbe-ex-produto.png);
+        background-image: url(/Projeto-BulbeShop-Grupo4/assets/images/bulbe-ex-produto.png);
         background-position: center;
         background-size: cover;
         border-radius: 8px;
@@ -155,7 +155,7 @@
     #imgRecomendado1,
     #imgRecomendado2,
     #imgRecomendado3 {
-        background-image: url(/assets/images/bulbe-ex-produto.png);
+        background-image: url(/Projeto-BulbeShop-Grupo4/assets/images/bulbe-ex-produto.png);
         background-size: cover;
         background-position: center;
         border-radius: 8px;
