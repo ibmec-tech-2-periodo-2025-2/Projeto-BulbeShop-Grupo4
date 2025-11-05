@@ -159,7 +159,6 @@ const PRODUTOS_DB = [
         avaliacao: 4.7,
         totalAvaliacoes: 234,
         destaque: true,
-        maisVendido: false,
         categoriaHome: "lampadas"
     },
 
@@ -172,12 +171,15 @@ const PRODUTOS_DB = [
         preco: 179.00,
         precoAntigo: 210.59,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/luminaria-mesa.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-positivosmart-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-positivosmart-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-positivosmart-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-positivosmart-3.jpg"
+        ],
         avaliacao: 4.1,
         totalAvaliacoes: 67,
         destaque: false,
-        maisVendido: false,
         categoriaHome: "luminarias"
     },
     {
@@ -188,12 +190,15 @@ const PRODUTOS_DB = [
         preco: 399.00,
         precoAntigo: 469.41,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/luminaria-xiaomi.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-xiaomibedside-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-xiaomibedside-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-xiaomibedside-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-xiaomibedside-3.jpg"
+        ],
         avaliacao: 4.8,
         totalAvaliacoes: 189,
         destaque: true,
-        maisVendido: false,
         categoriaHome: "luminarias"
     },
     {
@@ -204,8 +209,12 @@ const PRODUTOS_DB = [
         preco: 359.00,
         precoAntigo: 422.35,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/luminaria-cilindrica.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-elsys-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-elsys-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elsys-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elsys-3.jpg"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 91,
         destaque: false,
@@ -220,8 +229,12 @@ const PRODUTOS_DB = [
         preco: 249.00,
         precoAntigo: 292.94,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/luminaria-geonav.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-geonav-1.png",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-geonav-1.png",
+            "assets/images/imagensProdutos/luminarias/luminarias-geonav-2.png",
+            "assets/images/imagensProdutos/luminarias/luminarias-geonav-3.png"
+        ],
         avaliacao: 4.2,
         totalAvaliacoes: 73,
         destaque: false,
@@ -236,8 +249,12 @@ const PRODUTOS_DB = [
         preco: 189.00,
         precoAntigo: 222.35,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/plafon.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-elgynplafon-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynplafon-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynplafon-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynplafon-3.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 134,
         destaque: true,
@@ -252,8 +269,12 @@ const PRODUTOS_DB = [
         preco: 95.00,
         precoAntigo: 111.76,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/spot.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-elgynecospot-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynecospot-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynecospot-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-elgynecospot-3.jpg"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 82,
         destaque: false,
