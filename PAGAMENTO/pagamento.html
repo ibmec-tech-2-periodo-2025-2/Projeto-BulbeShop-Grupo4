@@ -17,19 +17,34 @@
         <a href="" class="user"><img src="../assets/images/usuario.png" alt=""></a>
     </header>
     <main class="corpo_pagamento">
-        <div class="entrega">Forma de entrega</div>
+        <div class="tamanhodiv">
+            <p class="fonteh">Forma de Entrega</p>
+            <p class="fontep">Selecione a opção de entrega que melhor se adequa às suas necessidades.</p>
+        </div>
+       
         <div class="d_entregas">
-        <button class="botao">Padrão - 6 à 8 dias úteis </button>
-        <button class="botao">Expressa - 3 à 5 dias úteis</button>
+            <label for="entrega">Entrega <span class="obrigatorio">*</span></label>
+            <select name="" id="seletor">
+                <option value="" selected disabled>Selecione a Forma de  Entrega</option>
+                <option value="">Padrão - 6 à 9 dias</option>
+                <option value="">Express - 3 à 5 dias</option>
+            </select>
         </div>
-        <div class="pagamento">Forma de Pagamento</div>
+        <div class="tamanhodiv">
+            <p class="fonteh">Forma de Pagamento</p>
+            <p class="fontep">Selecione a opção de pagamento que melhor se adequa às suas necessidades.</p>
+        </div>
         <div class="d_pagamentos">
-        <button class="botao">Pix - 10% de desconto</button>
-        <button class="botao">Cartão - Crédito </button>
-        <button class="botao">Cartão - Débito</button>
+        <label for="entrega">Pagamento <span class="obrigatorio">*</span></label>
+        <select name="" id="seletor">
+            <option value="" selected disabled>Selecione a forma de pagamento</option>
+            <option value="">Pix</option>
+            <option value="">Cartão - Crédito</option>
+            <option value="">Cartão - Débito</option>
+        </select>
         </div>
-        <button class="b_confirmar"> Confirmar </button>
-        <a href="" class="voltar">Voltar para o Carrinho</a>
+        <a href="../CONFIRMACAO/TCC.html" class="b_confirmar">Confirmar</a>
+        <a href="../CARRINHO/carrinho.html" class="voltar">Voltar para o Carrinho</a>
     </main>
 </body>
 </html>
