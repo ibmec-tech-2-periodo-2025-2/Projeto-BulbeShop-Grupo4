@@ -289,8 +289,12 @@ const PRODUTOS_DB = [
         preco: 149.00,
         precoAntigo: 175.29,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/abajur.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-dowlight-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-dowlight-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-dowlight-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-dowlight-3.jpg"
+        ],
         avaliacao: 4.1,
         totalAvaliacoes: 56,
         destaque: false,
@@ -305,8 +309,12 @@ const PRODUTOS_DB = [
         preco: 159.00,
         precoAntigo: 187.06,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/luminaria-ekaza.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.0,
         totalAvaliacoes: 48,
         destaque: false,
