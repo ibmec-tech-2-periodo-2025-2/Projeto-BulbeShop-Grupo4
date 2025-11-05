@@ -331,8 +331,12 @@ const PRODUTOS_DB = [
         preco: 259.00,
         precoAntigo: 304.71,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/PositivoSmartFita1.webp",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/PositivoSmartFita1.webp",
+            "assets/images/imagensProdutos/fitas/PositivoSmartFita1.webp",
+            "assets/images/imagensProdutos/fitas/PositivoSmartFita1.webp"
+        ],
         avaliacao: 4.2,
         totalAvaliacoes: 98,
         destaque: true,
@@ -347,8 +351,12 @@ const PRODUTOS_DB = [
         preco: 279.00,
         precoAntigo: 328.24,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/ElginFitaLED1.webp",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/ElginFitaLED1.webp",
+            "assets/images/imagensProdutos/fitas/ElginFitaLED2.webp",
+            "assets/images/imagensProdutos/fitas/ElginFitaLED3.webp"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 112,
         destaque: true,
@@ -363,8 +371,12 @@ const PRODUTOS_DB = [
         preco: 189.00,
         precoAntigo: 222.35,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/TramontinaSmartFita1.webp",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/TramontinaSmartFita1.webp",
+            "assets/images/imagensProdutos/fitas/TramontinaSmartFita2.jpg",
+            "assets/images/imagensProdutos/fitas/TramontinaSmartFita3.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 127,
         destaque: false,
@@ -379,8 +391,12 @@ const PRODUTOS_DB = [
         preco: 219.00,
         precoAntigo: 257.65,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/GeonavFita1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/GeonavFita1.jpg",
+            "assets/images/imagensProdutos/fitas/GeonavFita2.jpg",
+            "assets/images/imagensProdutos/fitas/GeonavFita3.jpg"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 85,
         destaque: false,
@@ -395,8 +411,12 @@ const PRODUTOS_DB = [
         preco: 299.00,
         precoAntigo: 351.76,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/TP-LinkTapo1.webp",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/TP-LinkTapo1.webp",
+            "assets/images/imagensProdutos/fitas/TP-LinkTapo2.webp",
+            "assets/images/imagensProdutos/fitas/TP-LinkTapo3.jpg"
+        ],
         avaliacao: 4.6,
         totalAvaliacoes: 178,
         destaque: true,
@@ -410,8 +430,12 @@ const PRODUTOS_DB = [
         preco: 132.00,
         precoAntigo: 155.29,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/NovaDigitalFita1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/NovaDigitalFita1.jpg",
+            "assets/images/imagensProdutos/fitas/NovaDigitalFita2.jpg",
+            "assets/images/imagensProdutos/fitas/NovaDigitalFita3.png"
+        ],
         avaliacao: 4.1,
         totalAvaliacoes: 64,
         destaque: false,
@@ -425,8 +449,12 @@ const PRODUTOS_DB = [
         preco: 115.00,
         precoAntigo: 135.29,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/AGLFita1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/AGLFita1.jpg",
+            "assets/images/imagensProdutos/fitas/AGLFita2.jpg",
+            "assets/images/imagensProdutos/fitas/AGLFita3.webp"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 93,
         destaque: false,
@@ -442,8 +470,12 @@ const PRODUTOS_DB = [
         preco: 149.00,
         precoAntigo: 175.29,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/fita-led.png",
+        imagem: "assets/images/imagensProdutos/fitas/LaCasaFita1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/fitas/LaCasaFita1.jpg",
+            "assets/images/imagensProdutos/fitas/LaCasaFita2.jpg",
+            "assets/images/imagensProdutos/fitas/LaCasaFita3.webp"
+        ],
         avaliacao: 4.2,
         totalAvaliacoes: 76,
         destaque: false,
@@ -458,8 +490,12 @@ const PRODUTOS_DB = [
         preco: 99.00,
         precoAntigo: 116.47,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/controle-universal.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.6,
         totalAvaliacoes: 145,
         destaque: true,
@@ -473,8 +509,12 @@ const PRODUTOS_DB = [
         preco: 89.00,
         precoAntigo: 104.71,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/controle-universal.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.5,
         totalAvaliacoes: 118,
         destaque: false,
@@ -488,8 +528,12 @@ const PRODUTOS_DB = [
         preco: 89.00,
         precoAntigo: 104.71,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/interruptor-1.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.6,
         totalAvaliacoes: 156,
         destaque: true,
@@ -503,8 +547,12 @@ const PRODUTOS_DB = [
         preco: 129.00,
         precoAntigo: 151.76,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/interruptor-3.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.7,
         totalAvaliacoes: 203,
         destaque: true,
@@ -518,8 +566,12 @@ const PRODUTOS_DB = [
         preco: 65.00,
         precoAntigo: 76.47,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/tomada.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 132,
         destaque: false,
@@ -533,8 +585,12 @@ const PRODUTOS_DB = [
         preco: 75.00,
         precoAntigo: 88.24,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/tomada.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 98,
         destaque: false,
@@ -548,8 +604,12 @@ const PRODUTOS_DB = [
         preco: 139.00,
         precoAntigo: 163.53,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/interruptor-vidro.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.5,
         totalAvaliacoes: 87,
         destaque: false,
@@ -563,8 +623,12 @@ const PRODUTOS_DB = [
         preco: 249.00,
         precoAntigo: 292.94,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/hub-xiaomi.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.7,
         totalAvaliacoes: 234,
         destaque: true,
@@ -580,8 +644,12 @@ const PRODUTOS_DB = [
         preco: 299.00,
         precoAntigo: 351.76,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/echo-dot.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.7,
         totalAvaliacoes: 567,
         destaque: true,
@@ -595,8 +663,12 @@ const PRODUTOS_DB = [
         preco: 224.00,
         precoAntigo: 263.53,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/echo-pop.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.5,
         totalAvaliacoes: 342,
         destaque: true,
@@ -610,8 +682,12 @@ const PRODUTOS_DB = [
         preco: 431.00,
         precoAntigo: 507.06,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/echo-spot.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 198,
         destaque: false,
@@ -625,8 +701,12 @@ const PRODUTOS_DB = [
         preco: 1399.00,
         precoAntigo: 1645.88,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/echo-show.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.6,
         totalAvaliacoes: 456,
         destaque: true,
@@ -640,8 +720,12 @@ const PRODUTOS_DB = [
         preco: 849.00,
         precoAntigo: 998.82,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/echo-max.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.8,
         totalAvaliacoes: 289,
         destaque: true,
@@ -655,8 +739,12 @@ const PRODUTOS_DB = [
         preco: 389.00,
         precoAntigo: 457.65,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/nest-mini.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.5,
         totalAvaliacoes: 412,
         destaque: true,
@@ -670,8 +758,12 @@ const PRODUTOS_DB = [
         preco: 849.00,
         precoAntigo: 998.82,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/nest-audio.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.7,
         totalAvaliacoes: 356,
         destaque: true,
@@ -685,8 +777,12 @@ const PRODUTOS_DB = [
         preco: 649.00,
         precoAntigo: 763.53,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/homepod-mini.png",
+        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
+            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+        ],
         avaliacao: 4.8,
         totalAvaliacoes: 523,
         destaque: true,
