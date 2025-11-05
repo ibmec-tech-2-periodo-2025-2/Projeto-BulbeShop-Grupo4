@@ -10,8 +10,12 @@ const PRODUTOS_DB = [
         preco: 35.00,
         precoAntigo: 41.18,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/AvantNeo/AvantNeo1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/AvantNeo/AvantNeo1.jpg",
+            "assets/images/imagensProdutos/lampadas/AvantNeo/AvantNeo2.jpg",
+            "assets/images/imagensProdutos/lampadas/AvantNeo/AvantNeo3.jpg"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 128,
         destaque: true,
@@ -26,8 +30,12 @@ const PRODUTOS_DB = [
         preco: 45.00,
         precoAntigo: 52.94,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/elginSmart10w/ElginSmart10w1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/elginSmart10w/ElginSmart10w1.jpg",
+            "assets/images/imagensProdutos/lampadas/elginSmart10w/ElginSmart10w2.jpg",
+            "assets/images/imagensProdutos/lampadas/elginSmart10w/ElginSmart10w3.jpg"
+        ],
         avaliacao: 4.2,
         totalAvaliacoes: 95,
         destaque: true,
@@ -42,8 +50,12 @@ const PRODUTOS_DB = [
         preco: 72.00,
         precoAntigo: 84.71,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/elginSmart30w/ElginSmart30w1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/elginSmart30w/ElginSmart30w1.jpg",
+            "assets/images/imagensProdutos/lampadas/elginSmart30w/ElginSmart30w2.jpg",
+            "assets/images/imagensProdutos/lampadas/elginSmart30w/ElginSmart30w3.jpg"
+        ],
         avaliacao: 4.1,
         totalAvaliacoes: 67,
         destaque: false,
@@ -58,8 +70,12 @@ const PRODUTOS_DB = [
         preco: 58.00,
         precoAntigo: 68.24,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/intelbrasEWS410/IntelbrasEWS1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/intelbrasEWS410/IntelbrasEWS1.jpg",
+            "assets/images/imagensProdutos/lampadas/intelbrasEWS410/IntelbrasEWS2.png",
+            "assets/images/imagensProdutos/lampadas/intelbrasEWS410/IntelbrasEWS2.jpg"
+        ],
         avaliacao: 4.4,
         totalAvaliacoes: 112,
         destaque: true,
@@ -74,8 +90,12 @@ const PRODUTOS_DB = [
         preco: 109.00,
         precoAntigo: 128.24,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/philipsHue/PhilipsHue1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/philipsHue/PhilipsHue1.jpg",
+            "assets/images/imagensProdutos/lampadas/philipsHue/PhilipsHue2.jpg",
+            "assets/images/imagensProdutos/lampadas/philipsHue/PhilipsHue3.jpg"
+        ],
         avaliacao: 4.2,
         totalAvaliacoes: 89,
         destaque: false,
@@ -90,8 +110,12 @@ const PRODUTOS_DB = [
         preco: 89.00,
         precoAntigo: 104.71,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/positivoSmart/PositivoSmart1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/positivoSmart/PositivoSmart1.jpg",
+            "assets/images/imagensProdutos/lampadas/positivoSmart/PositivoSmart2.jpg",
+            "assets/images/imagensProdutos/lampadas/positivoSmart/PositivoSmart3.jpg"
+        ],
         avaliacao: 4.5,
         totalAvaliacoes: 156,
         destaque: true,
@@ -106,8 +130,12 @@ const PRODUTOS_DB = [
         preco: 79.00,
         precoAntigo: 92.94,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/tramontinaSmart/TramontinaLed1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/tramontinaSmart/TramontinaLed1.jpg",
+            "assets/images/imagensProdutos/lampadas/tramontinaSmart/TramontinaLed2.jpg",
+            "assets/images/imagensProdutos/lampadas/tramontinaSmart/TramontinaLed3.jpg"
+        ],
         avaliacao: 4.3,
         totalAvaliacoes: 78,
         destaque: false,
@@ -122,8 +150,12 @@ const PRODUTOS_DB = [
         preco: 359.00,
         precoAntigo: 422.35,
         desconto: 15,
-        imagem: "assets/images/lampada.png",
-        imagemDetalhes: "assets/images/lampada.png",
+        imagem: "assets/images/imagensProdutos/lampadas/xiaomiLedSmart/XiaomiLed1.jpg",
+        imagemDetalhes: [
+            "assets/images/imagensProdutos/lampadas/xiaomiLedSmart/XiaomiLed1.jpg",
+            "assets/images/imagensProdutos/lampadas/xiaomiLedSmart/XiaomiLed2.png",
+            "assets/images/imagensProdutos/lampadas/xiaomiLedSmart/XiaomiLed3.jpg"
+        ],
         avaliacao: 4.7,
         totalAvaliacoes: 234,
         destaque: true,
