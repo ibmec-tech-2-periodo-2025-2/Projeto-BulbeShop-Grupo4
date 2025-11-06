@@ -75,8 +75,8 @@
 
 
     .secao-titulo {
-        width: 100vw;
-        margin-left: 40px;
+        width: 370px;
+        margin-left: 35px;
         border-left: 5px solid var(--AU700);
     }
    
@@ -123,7 +123,7 @@
         width: 160px;
         flex-shrink: 0;
         background-color: var(--branco);
-        border-radius: 16px;
+        border-radius: 8px;
         overflow: hidden;
         border: 2px solid var(--C100);
         display: flex;
