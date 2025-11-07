@@ -17,8 +17,6 @@
     /* ===== MAIN ===== */
     main {
         background-color: var(--cinza-claro);
-        padding-top: 64px;
-        min-height: 100vh;
     }
 
     /* ===== GALERIA DO PRODUTO ===== */
@@ -29,6 +27,7 @@
         margin: auto;
         overflow: hidden;
         border-radius: 10px;
+        margin-top: 20px;
     }
 
     .slides img {
@@ -238,13 +237,14 @@
         color: white;
         border: none;
         border-radius: 20px;
-        padding: 10px 60px;
+        height: 56px;
         font-size: 14px;
         cursor: pointer;
         transition: 0.3s;
         width: 80vw;
         display: flex;
         justify-content: center;
+        align-items: center;
         text-decoration: none;
         border-radius: 8px;
     }

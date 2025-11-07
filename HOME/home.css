@@ -14,16 +14,6 @@
     }
    
     /* Objetos Main */
-    main {
-        background-color: var(--branco);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 70px;
-        gap: 20px;
-        margin-bottom: 100px;
-    }
 
     .hero-banner {
         height: 150px;

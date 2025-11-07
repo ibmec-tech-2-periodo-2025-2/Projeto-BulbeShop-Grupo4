@@ -1,12 +1,4 @@
 @media (max-width: 440px) {
-  main {
-    min-height: calc(100vh - 130px);
-    margin-top: 70px;
-    margin-bottom: 60px;
-    font-family: 'Poppins';
-  }
-
-
   .tudo {
     display: flex;
     flex-direction: column;
@@ -51,32 +43,26 @@
     width: 90%;
   }
 
-
   #cep, #ender, #comp, #num {
     width: 100%;
-    height: 7.5vh;
+    height: 56px;
     border-radius: 8px;
     border: 1px solid var(--C300);
     padding-left: 10px;
     font-size: 16px;
   }
 
-
-
-
   .forms label{
     color: var(--C800);
   }
-
 
   .botao{
     width: 90%;
   }
 
-
   .but {
     width: 90%;
-    height: 7.5vh;  
+    height: 56px;  
     border-radius: 8px;
     background-color: var(--AU700);
     color: var(--branco);

@@ -13,10 +13,6 @@
         --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
         --Fundo:#f8f8ff;
     }
-    main{
-        gap: 20px;
-        margin-top: 90px;
-    }
     body{
         background-color: var(--Fundo);
     }
@@ -48,7 +44,7 @@
         align-items: center;
         justify-content: center;
         width: 90%;
-        height: 57px;
+        height: 56px;
         border-radius: 8px;
         cursor: pointer;
         text-decoration: none;
@@ -57,6 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 20px;
     }
     .voltar{
         margin: -18px;
@@ -64,7 +61,7 @@
     }
     #seletor{
         width: 100%;
-        height: 57px;
+        height: 56px;
         border-radius: 8px;
         font-size: large;
         color: var(--C300);

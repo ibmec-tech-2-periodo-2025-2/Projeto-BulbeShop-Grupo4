@@ -12,14 +12,7 @@
     }
 
     /* ===== MAIN ===== */
-    main {
-        padding-top: 20px;
-        padding-bottom: 80px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+
 
     /* ===== LISTA DE PRODUTOS ===== */
     .lista-produtos {
@@ -28,6 +21,7 @@
         gap: 12px;
         padding: 0 20px;
         width: 100%;
+        margin-top: 20px;
     }
 
     .caixaproduto {
@@ -253,7 +247,7 @@
         background: linear-gradient(135deg, var(--AU600) 0%, var(--AU700) 100%);
         color: var(--branco);
         border: none;
-        border-radius: 16px;
+        border-radius: 8px;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
