@@ -490,11 +490,11 @@ const PRODUTOS_DB = [
         preco: 99.00,
         precoAntigo: 116.47,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartControle/PositivoControle1.png",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartControle/PositivoControle1.png",
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartControle/PositivoControle2.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartControle/PositivoControle3.jpg"
         ],
         avaliacao: 4.6,
         totalAvaliacoes: 145,
@@ -509,11 +509,11 @@ const PRODUTOS_DB = [
         preco: 89.00,
         precoAntigo: 104.71,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/ElginControleUniversalSmart/ElginControle1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/ElginControleUniversalSmart/ElginControle1.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/ElginControleUniversalSmart/ElginControle2.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/ElginControleUniversalSmart/ElginControle3.webp"
         ],
         avaliacao: 4.5,
         totalAvaliacoes: 118,
@@ -528,11 +528,11 @@ const PRODUTOS_DB = [
         preco: 89.00,
         precoAntigo: 104.71,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS101/IntelbrasEWS10011.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS101/IntelbrasEWS10011.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS101/IntelbrasEWS10012.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS101/IntelbrasEWS10013.jpg"
         ],
         avaliacao: 4.6,
         totalAvaliacoes: 156,
@@ -547,11 +547,11 @@ const PRODUTOS_DB = [
         preco: 129.00,
         precoAntigo: 151.76,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10031.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10031.jpg",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10032.png",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10033.jpg"
         ],
         avaliacao: 4.7,
         totalAvaliacoes: 203,
