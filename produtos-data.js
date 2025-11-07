@@ -547,11 +547,11 @@ const PRODUTOS_DB = [
         preco: 129.00,
         precoAntigo: 151.76,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10031.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/Intelbras10031.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10031.jpg",
-            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10032.png",
-            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/intelbras10033.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/Intelbras10031.jpg",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/Intelbras10032.png",
+            "assets/images/imagensProdutos/acessorios/acessorios/IntelbrasEWS1003/Intelbras10033.jpg"
         ],
         avaliacao: 4.7,
         totalAvaliacoes: 203,
@@ -644,11 +644,11 @@ const PRODUTOS_DB = [
         preco: 299.00,
         precoAntigo: 351.76,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDot5/echodot51.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDot5/echodot51.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDot5/echodot52.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDot5/echodot53.jpg"
         ],
         avaliacao: 4.7,
         totalAvaliacoes: 567,
@@ -663,11 +663,11 @@ const PRODUTOS_DB = [
         preco: 224.00,
         precoAntigo: 263.53,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoPop/echopop1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoPop/echopop1.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoPop/echopop2.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoPop/echopop3.jpg"
         ],
         avaliacao: 4.5,
         totalAvaliacoes: 342,
@@ -682,11 +682,11 @@ const PRODUTOS_DB = [
         preco: 431.00,
         precoAntigo: 507.06,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoSpot/echospot1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoSpot/echospot1.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoSpot/echospot2.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoSpot/echospot3.jpg"
         ],
         avaliacao: 4.4,
         totalAvaliacoes: 198,
@@ -701,11 +701,11 @@ const PRODUTOS_DB = [
         preco: 1399.00,
         precoAntigo: 1645.88,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoShow8/echoshow1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoShow8/echoshow1.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoShow8/echoshow2.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoShow8/echoshow3.jpg"
         ],
         avaliacao: 4.6,
         totalAvaliacoes: 456,
@@ -720,11 +720,11 @@ const PRODUTOS_DB = [
         preco: 849.00,
         precoAntigo: 998.82,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDotMax/AmazonEchoDotMax1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDotMax/AmazonEchoDotMax1.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDotMax/AmazonEchoDotMax2.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AmazonEchoDotMax/AmazonEchoDotMax3.jpg"
         ],
         avaliacao: 4.8,
         totalAvaliacoes: 289,
