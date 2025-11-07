@@ -566,11 +566,11 @@ const PRODUTOS_DB = [
         preco: 65.00,
         precoAntigo: 76.47,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartPlug/PositivoPlug1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartPlug/PositivoPlug1.jpg",
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartPlug/PositivoPlug2.jpg",
+            "assets/images/imagensProdutos/acessorios/acessorios/PositivoSmartPlug/PositivoPlug3.jpg"
         ],
         avaliacao: 4.4,
         totalAvaliacoes: 132,
@@ -585,11 +585,11 @@ const PRODUTOS_DB = [
         preco: 75.00,
         precoAntigo: 88.24,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/EkazaSmartPlug/EkazaSmartPlug1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/EkazaSmartPlug/EkazaSmartPlug1.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/EkazaSmartPlug/EkazaSmartPlug2.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/EkazaSmartPlug/EkazaSmartPlug3.jpg"
         ],
         avaliacao: 4.4,
         totalAvaliacoes: 98,
@@ -604,11 +604,11 @@ const PRODUTOS_DB = [
         preco: 139.00,
         precoAntigo: 163.53,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/NovaDigitalInterruptor/NovadigitalInt1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/NovaDigitalInterruptor/NovadigitalInt1.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/NovaDigitalInterruptor/NovadigitalInt2.jpg",
+            "assets/images/imagensProdutos/acessorios/acessorios/NovaDigitalInterruptor/NovadigitalInt3.jpg"
         ],
         avaliacao: 4.5,
         totalAvaliacoes: 87,
@@ -623,11 +623,11 @@ const PRODUTOS_DB = [
         preco: 249.00,
         precoAntigo: 292.94,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/acessorios/acessorios/XiaomiMiSmartHomeHub/XiaomiSmartHome1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/acessorios/acessorios/XiaomiMiSmartHomeHub/XiaomiSmartHome1.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/XiaomiMiSmartHomeHub/XiaomiSmartHome2.webp",
+            "assets/images/imagensProdutos/acessorios/acessorios/XiaomiMiSmartHomeHub/XiaomiSmartHome3.webp"
         ],
         avaliacao: 4.7,
         totalAvaliacoes: 234,
