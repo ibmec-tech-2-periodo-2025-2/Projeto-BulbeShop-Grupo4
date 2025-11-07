@@ -739,11 +739,11 @@ const PRODUTOS_DB = [
         preco: 389.00,
         precoAntigo: 457.65,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestMini2/nestmini1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestMini2/nestmini1.webp",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestMini2/nestmini2.webp",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestMini2/nestmini3.webp"
         ],
         avaliacao: 4.5,
         totalAvaliacoes: 412,
@@ -758,11 +758,11 @@ const PRODUTOS_DB = [
         preco: 849.00,
         precoAntigo: 998.82,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestAudio/goognes1.webp",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestAudio/goognes1.webp",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestAudio/goognes2.webp",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/GoogleNestAudio/goognes3.webp"
         ],
         avaliacao: 4.7,
         totalAvaliacoes: 356,
@@ -777,11 +777,11 @@ const PRODUTOS_DB = [
         preco: 649.00,
         precoAntigo: 763.53,
         desconto: 15,
-        imagem: "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
+        imagem: "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AppleHomePodMini/homepodmini1.jpg",
         imagemDetalhes: [
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-1.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-2.jpg",
-            "assets/images/imagensProdutos/luminarias/luminarias-ekaza-3.jpg"
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AppleHomePodMini/homepodmini1.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AppleHomePodMini/homepodmini2.jpg",
+            "assets/images/imagensProdutos/assistentes/Assistentes Virtuais/AppleHomePodMini/homepodmini3.jpg"
         ],
         avaliacao: 4.8,
         totalAvaliacoes: 523,
