@@ -70,13 +70,13 @@
         color: var(--AC700);
     }
     #seletor{
-        width: 100%;
+       width: 100%;
         height: 56px;
         border-radius: 8px;
         font-size: large;
         color: var(--C300);
         border: 1px solid var(--C300);
-        padding-left: 5px;
+        padding-left: 10px;
     }
     .fontep{
         font-size: small;
@@ -96,5 +96,13 @@
         font-size: medium;
         color: var(--C600);
     }
-    
+    #num_cc{
+        width: 100%;
+        height: 56px;
+        border-radius: 8px;
+        font-size: large;
+        color: var(--C300);
+        border: 1px solid var(--C300);
+        padding-left: 10px;
+    }
 }
