@@ -14,3 +14,21 @@ botao.addEventListener("click", (event) => {
 
   window.location.href = "../PAGAMENTO/pagamento.html";
 });
+
+const inputs = [cep, endereco, numero, complemento];
+
+function verificarCampos() {
+  const todosPreenchidos = inputs.every(input => input.value.trim() !== '');
+
+  if (todosPreenchidos) {
+    botao.classList.remove('desabilitado');
+  } else {
+    botao.classList.add('desabilitado');
+  }
+}
+
+inputs.forEach(input => {
+  input.addEventListener('input', verificarCampos);
+});
+
+verificarCampos();

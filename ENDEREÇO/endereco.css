@@ -111,4 +111,11 @@
     font-size: 14px;
     font-weight: 500;
   }
+
+  .but.desabilitado {
+    background-color: var(--C100);
+    color: var(--branco);
+    pointer-events: none;
+    cursor: not-allowed;
+  }
 }
