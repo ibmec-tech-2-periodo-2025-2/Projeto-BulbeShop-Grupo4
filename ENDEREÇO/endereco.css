@@ -120,15 +120,24 @@
   }
 
   .escondido {
-    display: none;
+    display: none !important;
   }
 
   #cep-info {
     width: 100%;
     padding: 12px 0px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .txtcep{
     font-size: 14px;
     font-weight: 500;
     color: var(--preto);
-    text-align: left;
+  }
+
+  #cep-info img{
+    width: 20px;
   }
 }

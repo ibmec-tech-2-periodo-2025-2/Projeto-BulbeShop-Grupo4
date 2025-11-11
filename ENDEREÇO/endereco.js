@@ -3,7 +3,8 @@ const cep = document.getElementById("cep");
 const endereco = document.getElementById("ender");
 const numero = document.getElementById("num");
 const complemento = document.getElementById("comp");
-const cepAPI = document.getElementById('cep-info');
+const cepInfoContainer = document.getElementById('cep-info');
+const cepInfoTexto = document.querySelector('.txtcep');
 
 // Salvar dados
 botao.addEventListener("click", (event) => {
@@ -76,8 +77,8 @@ async function buscarCEP(cepVal) {
 function preencherCampos(data) {
   endereco.value = data.logradouro;
   
-  cepAPI.innerHTML = `${data.uf}, ${data.localidade}, ${data.bairro}`;
-  cepAPI.classList.remove('escondido');
+  cepInfoTexto.innerHTML = `${data.uf}, ${data.localidade}, ${data.bairro}`;
+  cepInfoContainer.classList.remove('escondido');
   
   endereco.readOnly = true; 
   
@@ -90,6 +91,6 @@ function preencherCampos(data) {
 function limparFormularioParcial() {
   endereco.value = "";
   endereco.readOnly = false;
-  cepAPI.classList.add('escondido');
+  cepInfoContainer.classList.add('escondido');
   verificarCampos();
 }
