@@ -3,6 +3,7 @@ const cep = document.getElementById("cep");
 const endereco = document.getElementById("ender");
 const numero = document.getElementById("num");
 const complemento = document.getElementById("comp");
+const cepAPI = document.getElementById('cep-info');
 
 // Salvar dados
 botao.addEventListener("click", (event) => {
@@ -43,3 +44,52 @@ cep.addEventListener("input", function () {
     this.value = this.value.slice(0, 9);
   }
 });
+
+// API do CEP
+cep.addEventListener('blur', function() {
+  buscarCEP(this.value);
+});
+
+async function buscarCEP(cepVal) {
+  const cepLimpo = cepVal.replace(/\D/g, '');
+  if (cepLimpo.length !== 8) {
+    limparFormularioParcial();
+    return;
+  }
+
+  try {
+    const response = await fetch(`https://viacep.com.br/ws/${cepLimpo}/json/`);
+    const data = await response.json();
+
+    if (data.erro) {
+      console.error("CEP não encontrado.");
+      limparFormularioParcial();
+    } else {
+      preencherCampos(data);
+    }
+  } catch (error) {
+    console.error("Erro ao buscar CEP:", error);
+    limparFormularioParcial();
+  }
+}
+
+function preencherCampos(data) {
+  endereco.value = data.logradouro;
+  
+  cepAPI.innerHTML = `${data.uf}, ${data.localidade}, ${data.bairro}`;
+  cepAPI.classList.remove('escondido');
+  
+  endereco.readOnly = true; 
+  
+  numero.focus(); 
+  
+  verificarCampos();
+}
+
+
+function limparFormularioParcial() {
+  endereco.value = "";
+  endereco.readOnly = false;
+  cepAPI.classList.add('escondido');
+  verificarCampos();
+}

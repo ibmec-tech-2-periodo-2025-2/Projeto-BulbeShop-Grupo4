@@ -118,4 +118,17 @@
     pointer-events: none;
     cursor: not-allowed;
   }
+
+  .escondido {
+    display: none;
+  }
+
+  #cep-info {
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--preto);
+    text-align: left;
+  }
 }
