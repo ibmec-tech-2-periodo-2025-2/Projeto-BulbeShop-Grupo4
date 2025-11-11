@@ -36,6 +36,7 @@
     }
     .credito{
         margin-top: 30px;
+        display: none;
     }
     .b_confirmar {
         background-color: var(--AU700);
