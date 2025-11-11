@@ -34,7 +34,9 @@
         width: 90%; 
         border-radius: 8px; 
     }
-
+    .credito{
+        margin-top: 40px;
+    }
     .b_confirmar {
         background-color: var(--AU700);
         color: var(--branco);
@@ -55,6 +57,7 @@
         box-sizing: border-box;
         cursor: pointer;
         text-decoration: none;
+
     }
 
     .corpo_pagamento {
