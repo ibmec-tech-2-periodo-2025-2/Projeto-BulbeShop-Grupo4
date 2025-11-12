@@ -1,74 +1,102 @@
 @media (max-width: 440px) {
+  main {
+    min-height: calc(100vh - 130px);
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-family: 'Poppins';
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .tudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
     width: 100%;
+    padding-top: 24px;
   }
-
 
   .titulo{
     gap: 18px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
   }
-
 
   .titulo h1{
     color: var(--AU700);
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
-
 
   .titulo p{
-    font-size: 16px;
-    color: var(--C700);
+    font-size: 14px;
+    color: var(--C600);
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
-
 
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     width: 100%;
-    margin-top: -25px;
   }
-
 
   .forms{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    gap: 8px;
   }
 
   #cep, #ender, #comp, #num {
     width: 100%;
-    height: 56px;
+    background-color: var(--branco);
     border-radius: 8px;
-    border: 1px solid var(--C300);
-    padding-left: 10px;
-    font-size: 16px;
+    border: 1px solid var(--C100);
+    padding: 12px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--C600);
+  }
+
+  #cep::placeholder, #ender::placeholder, #comp::placeholder, #num::placeholder {
+    color: var(--C300);
+    font-weight: 300;
+    opacity: 1;
   }
 
   .forms label{
-    color: var(--C800);
-  }
-
-  .botao{
-    width: 90%;
+    color: var(--C600);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
   .but {
-    width: 90%;
-    height: 56px;  
+    width: 100%;
     border-radius: 8px;
+    padding: 16px 12px;
     background-color: var(--AU700);
     color: var(--branco);
-    font-weight: 650;
-    font-size: 16px;
-    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-decoration: none;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +104,41 @@
 
   .lab {
     display: flex;
-    gap: 3px;
+    gap: 2px;
   }
   .lab p{
     color: var(--E700);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .but.desabilitado {
+    background-color: var(--C100);
+    color: var(--branco);
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .escondido {
+    display: none !important;
+  }
+
+  #cep-info {
+    width: 100%;
+    padding: 12px 0px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .txtcep{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--preto);
+  }
+
+  #cep-info img{
+    width: 20px;
   }
 }
