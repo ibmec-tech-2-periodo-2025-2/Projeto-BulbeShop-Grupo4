@@ -13,77 +13,128 @@
         --M1: #F4F3DE; --M2: #E0DC6A; --M3: #DF7145; --M4: #C4DFC9; --M5: #4F9358; --M6: #396439; --M7: #3B63A9; --M8: #2C2D7A;
         --Fundo:#f8f8ff;
     }
-    body{
+    main {
+        gap: 32px; 
+        margin-top: 70px; 
+        padding-top: 24px; 
+    }
+
+    body {
         background-color: var(--Fundo);
     }
-    .d_entregas{
+
+    .d_entregas,
+    .d_pagamentos,
+    .credito {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 5px;
-        width: 90%;
+        gap: 8px; 
+        width: 90%; 
+        border-radius: 8px; 
     }
-    .d_pagamentos{
-        /* border: 2px solid green; */
-       
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 5px;
-        width: 90%;
+    .credito{
+        margin-top: 30px;
+        display: none;
     }
-    .b_confirmar{
-        margin-top: 60px;
-        border: 1px solid var(--AU700);
+    .b_confirmar {
         background-color: var(--AU700);
-        color: var(--A50);
-        font-size: large;
+        color: var(--branco);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 90%;
-        height: 56px;
+        width: 90%; 
+        padding: 16px 12px;
+
         border-radius: 8px;
+        border: none;
+        box-sizing: border-box;
         cursor: pointer;
         text-decoration: none;
+
+        margin-top: 30px;
+
     }
-    .corpo_pagamento{
+
+    .corpo_pagamento {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
     }
-    .voltar{
-        margin: -18px;
+
+    .voltar {
         color: var(--AC700);
+        text-align: center;
     }
-    #seletor{
+
+    .seletor,
+    #seletor,
+    #pagamento,
+    #num_cc {
         width: 100%;
-        height: 56px;
+        padding: 12px;
         border-radius: 8px;
-        font-size: large;
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+
         color: var(--C300);
         border: 1px solid var(--C300);
-        padding-left: 30px;
+        box-sizing: border-box;
     }
-    .fontep{
-        font-size: small;
+
+    
+    .seletor:valid,
+    #seletor:valid,
+    #pagamento:valid 
+    {
         color: var(--C600);
+        border: 1px solid var(--C100);
     }
-    .fonteh{
-        font-size: x-large;
+
+    .fontep {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--C600);
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    .fonteh {
+        font-size: 23px;
+        font-weight: 500;
         color: var(--AU700);
+        line-height: 140%;
+        letter-spacing: 0.02em;
     }
-    .tamanhodiv{
+
+    .tamanhodiv {
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
-    .obrigatorio{
-        color: var(--A900);
+
+    .obrigatorio {
+        color: var(--E700);
     }
-    label{
-        font-size: medium;
+
+    label {
+        font-size: 14px;
+        font-weight: 500;
         color: var(--C600);
+        line-height: 140%;
+        letter-spacing: 0.02em;
     }
 }
