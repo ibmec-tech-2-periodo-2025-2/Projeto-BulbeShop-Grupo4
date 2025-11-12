@@ -122,6 +122,7 @@ function atualizarResumo() {
     // Mostrar/esconder resumo se carrinho estiver vazio
     const resumo = document.querySelector('.resumo-pedido');
     const botaoFinalizar = document.querySelector('.container-botao');
+    const botaoLimpar = document.querySelector('.container-botao2');
     
     if (carrinho.length === 0) {
         if (resumo) resumo.style.display = 'none';
