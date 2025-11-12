@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,6 +20,8 @@
     <main>
 
 
+
+
     <main>
         <section class="secao-confirmacao">
             <!-- Ícone de Sucesso -->
@@ -29,16 +32,19 @@
                 </svg>
             </div>
 
+
             <!-- Imagem do Produto -->
             <div class="container-produto-confirmado">
                 <div class="imgCompra"></div>
             </div>
+
 
             <!-- Mensagem de Agradecimento -->
             <div class="mensagem-sucesso">
                 <h1 class="titulo-sucesso">Pedido Confirmado!</h1>
                 <p class="subtitulo-sucesso">Obrigado por comprar com a gente</p>
             </div>
+
 
             <!-- Botão de Rastreio -->
             <div class="container-acoes">
@@ -59,63 +65,12 @@
             </div>
 
 
-            <div class="grid-recomendacoes">
-                <a href="../PRODUTO/produto.html" class="card-recomendacao">
-                    <div class="img-recomendacao" id="imgRecomendado1">
-                        <span class="badge-desconto" id="percentualDesconto1">-20%</span>
-                    </div>
-                    <div class="info-recomendacao">
-                        <h3 class="nome-recomendacao">Lâmpada LED Inteligente</h3>
-                        <div class="preco-recomendacao">
-                            <span class="preco-antigo" id="precoCheio1">R$ 79,99</span>
-                            <span class="preco-atual" id="precoDesconto1">R$ 64,90</span>
-                        </div>
-                        <div class="rating-recomendacao">
-                            <span class="estrelas-mini">★★★★★</span>
-                            <span class="reviews-mini">(89)</span>
-                        </div>
-                    </div>
-                </a>
+    <div class="produtos" id="recomendacoesContainer">
 
 
-                <a href="../PRODUTO/produto.html" class="card-recomendacao">
-                    <div class="img-recomendacao" id="imgRecomendado2">
-                        <span class="badge-desconto" id="percentualDesconto2">-20%</span>
-                    </div>
-                    <div class="info-recomendacao">
-                        <h3 class="nome-recomendacao">Lâmpada LED Inteligente</h3>
-                        <div class="preco-recomendacao">
-                            <span class="preco-antigo" id="precoCheio2">R$ 79,99</span>
-                            <span class="preco-atual" id="precoDesconto2">R$ 64,90</span>
-                        </div>
-                        <div class="rating-recomendacao">
-                            <span class="estrelas-mini">★★★★★</span>
-                            <span class="reviews-mini">(89)</span>
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="../PRODUTO/produto.html" class="card-recomendacao">
-                    <div class="img-recomendacao" id="imgRecomendado3">
-                        <span class="badge-desconto" id="percentualDesconto3">-20%</span>
-                    </div>
-                    <div class="info-recomendacao">
-                        <h3 class="nome-recomendacao">Lâmpada LED Inteligente</h3>
-                        <div class="preco-recomendacao">
-                            <span class="preco-antigo" id="precoCheio3">R$ 79,99</span>
-                            <span class="preco-atual" id="precoDesconto3">R$ 64,90</span>
-                        </div>
-                        <div class="rating-recomendacao">
-                            <span class="estrelas-mini">★★★★★</span>
-                            <span class="reviews-mini">(89)</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+    </div>
         </section>
     </main>
-
 
     <footer class="footer-confirmacao">
         <a href="../HOME/home.html" class="botao-nav" aria-label="Página inicial">
@@ -131,5 +86,8 @@
             <span>Favoritos</span>
         </a>
     </footer>
+<script src="../produtos-data.js"></script>
+<script src="../HOME/home.js"></script> <!-- contém criarCardProduto() -->
+<script src="TCC.js"></script>
 </body>
 </html>
