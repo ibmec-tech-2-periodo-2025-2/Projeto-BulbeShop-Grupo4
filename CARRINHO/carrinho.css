@@ -111,18 +111,24 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        transition: all 0.2s ease;
+        transition: all 0.05s ease;
     }
 
     .btn-controle.remover img {
         width: 14px;
         height: 14px;
     }
-
+    .btn-controle.remover{
+        transform: translateY(2px);
+    }
     .btn-controle.adicionar {
         font-size: 20px;
         font-weight: 600;
         color: var(--AU700);
+    }
+
+    .btn-controle.adicionar:active{
+        transform: translateY(2px);
     }
 
     .btn-controle:active {
