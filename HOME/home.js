@@ -216,3 +216,28 @@ function moverCarrossel(direcao, trackId, carrosselIndex) {
 
     track.style.transform = `translateX(-${indices[carrosselIndex] * produtoWidth}px)`;
 }
+
+// ===== FUNÇÕES DE CARRINHO E FAVORITOS NA HOME =====
+
+function adicionarAoCarrinho(idProduto) {
+    const produto = buscarProdutoPorId(idProduto);
+    
+    if (!produto) {
+        return;
+    }
+    
+    let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+    const itemExistente = carrinho.find(item => item.id === idProduto);
+    
+    if (itemExistente) {
+        itemExistente.quantidade += 1;
+    } else {
+        carrinho.push({
+            id: idProduto,
+            quantidade: 1
+        });
+    }
+    
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    atualizarContadorCarrinho();
+}

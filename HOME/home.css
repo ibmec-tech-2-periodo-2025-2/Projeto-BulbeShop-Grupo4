@@ -219,8 +219,13 @@
         align-items: center;
         justify-content: center;
         gap: 6px;
+        transition: all 0.05s ease;
     }
 
+    .btn-adicionar:active{
+        transform: translateY(2px);
+    }
+    
     .btn-icon {
         font-size: 18px;
         font-weight: 400;

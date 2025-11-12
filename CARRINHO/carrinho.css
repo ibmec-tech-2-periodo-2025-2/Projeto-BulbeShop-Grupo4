@@ -111,18 +111,24 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        transition: all 0.2s ease;
+        transition: all 0.05s ease;
     }
 
     .btn-controle.remover img {
         width: 14px;
         height: 14px;
     }
-
+    .btn-controle.remover{
+        transform: translateY(2px);
+    }
     .btn-controle.adicionar {
         font-size: 20px;
         font-weight: 600;
         color: var(--AU700);
+    }
+
+    .btn-controle.adicionar:active{
+        transform: translateY(2px);
     }
 
     .btn-controle:active {
@@ -238,7 +244,14 @@
     .container-botao {
         width: 100%;
         padding: 0 20px;
-        margin-top: 8px;
+        position: relative;
+        top: 8px;
+    }
+    .container-botao2 {
+        width: 100%;
+        padding: 0 20px;
+        position: relative;
+        top: 8px;
     }
 
     .btn-finalizar {
@@ -256,5 +269,24 @@
         justify-content: center;
         text-decoration: none;
         transition: all 0.2s ease;
+    }
+
+    .btn-limpar{
+        width: 100%;
+        height: 56px;
+        background: linear-gradient(135deg, var(--C500) 0%, var(--C600) 100%);
+        color: var(--branco);
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        position: relative;
+        bottom: 8px;
     }
 }
