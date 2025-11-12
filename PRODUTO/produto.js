@@ -172,8 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botões de adicionar ao carrinho
     const botoesCarrinho = document.querySelectorAll('.btn-comprar');
     botoesCarrinho.forEach(botao => {
-        botao.addEventListener('click', function(e) {
-            e.preventDefault();
+        botao.addEventListener('click', function() {
             adicionarAoCarrinhoProduto();
         });
     });

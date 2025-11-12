@@ -91,6 +91,7 @@ function diminuirQuantidade(idProduto) {
 }
 
 // Função para atualizar o resumo do pedido
+const botaoLimpar = document.querySelector('.container-botao2');
 function atualizarResumo() {
     const carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
     
@@ -126,9 +127,11 @@ function atualizarResumo() {
     if (carrinho.length === 0) {
         if (resumo) resumo.style.display = 'none';
         if (botaoFinalizar) botaoFinalizar.style.display = 'none';
+        if (botaoLimpar) botaoLimpar.style.display = 'none';
     } else {
         if (resumo) resumo.style.display = 'block';
         if (botaoFinalizar) botaoFinalizar.style.display = 'block';
+        if (botaoLimpar) botaoLimpar.style.display = 'block';
     }
 }
 
@@ -141,8 +144,25 @@ function atualizarContadorCarrinho() {
     console.log(`Total de itens no carrinho: ${totalItens}`);
 }
 
+
 // Inicializar ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     carregarCarrinho();
     atualizarContadorCarrinho();
+
+// Limpa o carrinho
+    if(botaoLimpar){
+        botaoLimpar.addEventListener("click", (event) =>{
+        event.preventDefault();
+        const confirmar = confirm("Tem certeza que deseja limpar todo o carrinho?");
+        if (!confirmar) return;
+
+        localStorage.removeItem('carrinho');
+
+        carregarCarrinho();
+        atualizarContadorCarrinho();
+        
+    })
+}
 });
+
