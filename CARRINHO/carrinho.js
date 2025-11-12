@@ -66,7 +66,6 @@ function aumentarQuantidade(idProduto) {
         item.quantidade++;
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
         carregarCarrinho();
-        mostrarToast('Quantidade atualizada!', 'sucesso');
     }
 }
 
@@ -80,14 +79,12 @@ function diminuirQuantidade(idProduto) {
             item.quantidade--;
             localStorage.setItem('carrinho', JSON.stringify(carrinho));
             carregarCarrinho();
-            mostrarToast('Quantidade atualizada!', 'info');
         } else {
             // Remove do carrinho se quantidade for 1
             if (confirm('Deseja remover este produto do carrinho?')) {
                 carrinho = carrinho.filter(i => i.id !== idProduto);
                 localStorage.setItem('carrinho', JSON.stringify(carrinho));
                 carregarCarrinho();
-                mostrarToast('Produto removido do carrinho', 'info');
             }
         }
     }
@@ -133,28 +130,6 @@ function atualizarResumo() {
         if (resumo) resumo.style.display = 'block';
         if (botaoFinalizar) botaoFinalizar.style.display = 'block';
     }
-}
-
-// Função Toast para notificações
-function mostrarToast(mensagem, tipo = 'info') {
-    // Remove toast anterior se existir
-    const toastAnterior = document.querySelector('.toast');
-    if (toastAnterior) toastAnterior.remove();
-    
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${tipo}`;
-    toast.textContent = mensagem;
-    
-    document.body.appendChild(toast);
-    
-    // Animar entrada
-    setTimeout(() => toast.classList.add('mostrar'), 100);
-    
-    // Remover após 3 segundos
-    setTimeout(() => {
-        toast.classList.remove('mostrar');
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
 }
 
 // Atualizar contador do carrinho no footer

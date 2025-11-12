@@ -42,7 +42,6 @@ function toggleFavorito() {
     const idProduto = parseInt(urlParams.get('id'));
     
     if (!idProduto) {
-        mostrarToast('Produto não encontrado!', 'erro');
         return;
     }
     
@@ -53,12 +52,10 @@ function toggleFavorito() {
         // Remove dos favoritos
         favoritos = favoritos.filter(id => id !== idProduto);
         imgCoracao.src = '../assets/images/coracao.png';
-        mostrarToast('Removido dos favoritos', 'info');
     } else {
         // Adiciona aos favoritos
         favoritos.push(idProduto);
         imgCoracao.src = '../assets/images/coracao-preenchido.png';
-        mostrarToast('Adicionado aos favoritos!', 'sucesso');
     }
     
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
@@ -85,14 +82,12 @@ function adicionarAoCarrinhoProduto() {
     const idProduto = parseInt(urlParams.get('id'));
     
     if (!idProduto) {
-        mostrarToast('Produto não encontrado!', 'erro');
         return;
     }
     
     const produto = buscarProdutoPorId(idProduto);
     
     if (!produto) {
-        mostrarToast('Produto não encontrado!', 'erro');
         return;
     }
     
@@ -101,13 +96,11 @@ function adicionarAoCarrinhoProduto() {
     
     if (itemExistente) {
         itemExistente.quantidade += valor;
-        mostrarToast(`Quantidade atualizada! (${itemExistente.quantidade} unidades)`, 'sucesso');
     } else {
         carrinho.push({
             id: idProduto,
             quantidade: valor
         });
-        mostrarToast(`${produto.nome} adicionado ao carrinho!`, 'sucesso');
     }
     
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
@@ -115,25 +108,6 @@ function adicionarAoCarrinhoProduto() {
     // Reset quantidade
     valor = 1;
     quantidade.textContent = valor;
-}
-
-// Função Toast
-function mostrarToast(mensagem, tipo = 'info') {
-    const toastAnterior = document.querySelector('.toast');
-    if (toastAnterior) toastAnterior.remove();
-    
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${tipo}`;
-    toast.textContent = mensagem;
-    
-    document.body.appendChild(toast);
-    
-    setTimeout(() => toast.classList.add('mostrar'), 100);
-    
-    setTimeout(() => {
-        toast.classList.remove('mostrar');
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
 }
 
 // Carregar dados do produto da URL
