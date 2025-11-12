@@ -253,3 +253,8 @@ footer {
     display: none;
 }
 }
+.estrelas {
+    color: var(--A500);
+    font-size: 12px;
+    letter-spacing: -1px;
+}
