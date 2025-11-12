@@ -216,3 +216,49 @@ function moverCarrossel(direcao, trackId, carrosselIndex) {
 
     track.style.transform = `translateX(-${indices[carrosselIndex] * produtoWidth}px)`;
 }
+
+// ===== FUNÇÕES DE CARRINHO E FAVORITOS NA HOME =====
+
+function adicionarAoCarrinho(idProduto) {
+    const produto = buscarProdutoPorId(idProduto);
+    
+    if (!produto) {
+        mostrarToast('Produto não encontrado!', 'erro');
+        return;
+    }
+    
+    let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+    const itemExistente = carrinho.find(item => item.id === idProduto);
+    
+    if (itemExistente) {
+        itemExistente.quantidade += 1;
+        mostrarToast(`Quantidade atualizada!`, 'sucesso');
+    } else {
+        carrinho.push({
+            id: idProduto,
+            quantidade: 1
+        });
+        mostrarToast(`${produto.nome} adicionado ao carrinho!`, 'sucesso');
+    }
+    
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    atualizarContadorCarrinho();
+}
+
+function mostrarToast(mensagem, tipo = 'info') {
+    const toastAnterior = document.querySelector('.toast');
+    if (toastAnterior) toastAnterior.remove();
+    
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${tipo}`;
+    toast.textContent = mensagem;
+    
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.classList.add('mostrar'), 100);
+    
+    setTimeout(() => {
+        toast.classList.remove('mostrar');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
