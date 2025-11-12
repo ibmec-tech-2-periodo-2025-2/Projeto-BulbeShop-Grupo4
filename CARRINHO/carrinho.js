@@ -91,7 +91,6 @@ function diminuirQuantidade(idProduto) {
 }
 
 // Função para atualizar o resumo do pedido
-const botaoLimpar = document.querySelector('.container-botao2');
 function atualizarResumo() {
     const carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
     
@@ -151,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     atualizarContadorCarrinho();
 
 // Limpa o carrinho
+    const botaoLimpar = document.querySelector('.container-botao2');
     if(botaoLimpar){
         botaoLimpar.addEventListener("click", (event) =>{
         event.preventDefault();
