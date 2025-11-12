@@ -230,15 +230,8 @@
         font-size: 13px;
     }
 
-    .promocao_pequena {
-        height: 110px;
-        width: 350px;
-        background-color: var(--AU700);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--branco);
-        font-weight: 600;
+    .promocao_pequena img {
+        height: 230px;
+        border-radius: 16px;
     }
 }
