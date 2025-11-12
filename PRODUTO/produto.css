@@ -28,18 +28,22 @@
         overflow: hidden;
         border-radius: 10px;
         margin-top: 20px;
-    }
+        border: 3px solid var(--C200);
+            }
 
     .slides img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: none;
+        
     }
 
     .slides img.ativo {
         display: block;
+        
     }
+  
 
     .btn-anterior,
     .btn-proximo {
