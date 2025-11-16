@@ -129,7 +129,7 @@ function carregarProduto() {
     
     // Atualizar informações na página
     document.querySelector('.produto-titulo').textContent = produto.nome;
-    document.querySelector('.descricao-texto').textContent = produto.descricao.replace(/<[^>]*>/g, '');
+    document.querySelector('.descricao-texto').innerHTML = produto.descricao;
     
     const precoFinal = calcularPrecoComDesconto(produto.preco, produto.desconto);
     document.querySelector('.preco-atual').textContent = formatarPreco(precoFinal);
