@@ -55,7 +55,7 @@ function toggleFavorito() {
     } else {
         // Adiciona aos favoritos
         favoritos.push(idProduto);
-        imgCoracao.src = '../assets/images/coracao-preenchido.png';
+        imgCoracao.src = '../assets/images/coracao-vermelho.png';
     }
     
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
