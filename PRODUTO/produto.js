@@ -1,5 +1,5 @@
 // ==========================================================
-// CONTROLE DE QUANTIDADE
+// CONTROLE DE QUANTIDADE (com animação BOUNCE)
 // ==========================================================
 const diminuir = document.getElementById('diminuir');
 const aumentar = document.getElementById('aumentar');
@@ -7,22 +7,29 @@ const quantidade = document.getElementById('quantidade');
 
 let valor = 1;
 
+// Função de animação de bounce
+function animarQuantidade() {
+    quantidade.classList.add("quantidade-animada");
+    setTimeout(() => quantidade.classList.remove("quantidade-animada"), 150);
+}
+
 diminuir.addEventListener('click', () => {
     if (valor > 1) {
         valor--;
         quantidade.textContent = valor;
+        animarQuantidade();
     }
 });
 
 aumentar.addEventListener('click', () => {
     valor++;
     quantidade.textContent = valor;
+    animarQuantidade();
 });
 
 
-
 // ==========================================================
-// CARROSSEL DE IMAGENS
+// CARROSSEL DE IMAGENS — agora com fade suave (CSS faz o fade)
 // ==========================================================
 const imagens = document.querySelectorAll('.slides img');
 const anterior = document.querySelector('.btn-anterior');
@@ -32,22 +39,34 @@ let indice = 0;
 function mostrarImagem(novoIndice) {
     if (imagens.length === 0) return;
 
-    if (imagens[indice]) imagens[indice].classList.remove('ativo');
+    imagens[indice].classList.remove('ativo');
 
     indice = (novoIndice + imagens.length) % imagens.length;
+
     imagens[indice].classList.add('ativo');
 }
 
-anterior.addEventListener('click', () => mostrarImagem(indice - 1));
-proximo.addEventListener('click', () => mostrarImagem(indice + 1));
+anterior.addEventListener('click', () => {
+    mostrarImagem(indice - 1);
 
+    // feedback visual no botão
+    anterior.classList.add("btn-click");
+    setTimeout(() => anterior.classList.remove("btn-click"), 150);
+});
+
+proximo.addEventListener('click', () => {
+    mostrarImagem(indice + 1);
+
+    // feedback visual
+    proximo.classList.add("btn-click");
+    setTimeout(() => proximo.classList.remove("btn-click"), 150);
+});
 
 
 // ==========================================================
-// FAVORITOS — SALVAR APENAS IDs
+// FAVORITOS — SALVAR APENAS IDs + animação melhorada no coração
 // ==========================================================
 
-// Função para pegar ID do produto pela URL
 function obterIdProduto() {
     const urlParams = new URLSearchParams(window.location.search);
     return parseInt(urlParams.get("id"));
@@ -55,7 +74,6 @@ function obterIdProduto() {
 
 const coracao = document.querySelector(".coracao");
 
-// Alternar favorito ao clicar
 coracao.addEventListener("click", () => {
     const idProduto = obterIdProduto();
     if (isNaN(idProduto)) return;
@@ -68,12 +86,16 @@ coracao.addEventListener("click", () => {
     } else {
         favoritos.push(idProduto);
         coracao.classList.add("ativo");
+
+        // animação extra de pulsar
+        coracao.classList.add("coracao-pulse");
+        setTimeout(() => coracao.classList.remove("coracao-pulse"), 300);
     }
 
     localStorage.setItem("favoritos", JSON.stringify(favoritos));
 });
 
-// Estado inicial do coração
+// Estado inicial
 function verificarFavorito() {
     const idProduto = obterIdProduto();
     const favoritos = JSON.parse(localStorage.getItem("favoritos") || "[]");
@@ -86,14 +108,17 @@ function verificarFavorito() {
 document.addEventListener("DOMContentLoaded", verificarFavorito);
 
 
-
 // ==========================================================
-// COMPARTILHAR LINK
+// COMPARTILHAMENTO — com feedback visual (pop rápido)
 // ==========================================================
 const botaoCompartilhar = document.querySelector(".link");
 
 botaoCompartilhar.addEventListener("click", () => {
     const url = window.location.href;
+
+    // animação visual instantânea
+    botaoCompartilhar.classList.add("share-pop");
+    setTimeout(() => botaoCompartilhar.classList.remove("share-pop"), 200);
 
     navigator.clipboard.writeText(url)
         .then(() => {
@@ -105,40 +130,29 @@ botaoCompartilhar.addEventListener("click", () => {
 });
 
 
-
 // ==========================================================
-// ADICIONAR AO CARRINHO
+// ADICIONAR AO CARRINHO — animação + feedback no botão
 // ==========================================================
+const botaoAdicionar = document.querySelector(".btn-adicionar-carrinho");
 
-// 🔥 IMPORTANTE: no HTML o botão deve ser:
-// <button id="btnAdicionarCarrinho" class="btn-comprar">Adicionar ao Carrinho</button>
-
-const botaoCarrinho = document.getElementById("btnAdicionarCarrinho");
-
-if (botaoCarrinho) {
-    botaoCarrinho.addEventListener("click", () => {
+if (botaoAdicionar) {
+    botaoAdicionar.addEventListener("click", () => {
         const idProduto = obterIdProduto();
-        const produto = buscarProdutoPorId(idProduto); // vem do produtos-data.js
-        if (!produto) return;
+        if (isNaN(idProduto)) return;
 
         let carrinho = JSON.parse(localStorage.getItem("carrinho") || "[]");
+        const existente = carrinho.find(p => p.id === idProduto);
 
-        const itemExistente = carrinho.find(item => item.id === idProduto);
-
-        if (itemExistente) {
-            // aumenta a quantidade do mesmo item
-            itemExistente.quantidade += valor; // valor = quantidade escolhida na página
+        if (existente) {
+            existente.quantidade += valor;
         } else {
-            // adiciona o item novo
-            carrinho.push({
-                id: idProduto,
-                quantidade: valor
-            });
+            carrinho.push({ id: idProduto, quantidade: valor });
         }
 
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-        // Redireciona para o carrinho
-        window.location.href = "../CARRINHO/carrinho.html";
+        // animação de sucesso
+        botaoAdicionar.classList.add("btn-sucesso");
+        setTimeout(() => botaoAdicionar.classList.remove("btn-sucesso"), 600);
     });
 }
