@@ -115,6 +115,7 @@
     }
 
     .btn-controle.remover img {
+        margin-top: -3.1px;
         width: 14px;
         height: 14px;
     }

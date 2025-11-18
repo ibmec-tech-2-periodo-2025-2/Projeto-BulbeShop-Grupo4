@@ -113,7 +113,7 @@
   }
 
   .but.desabilitado {
-    background-color: var(--C100);
+    background-color: var(--C400);
     color: var(--branco);
     pointer-events: none;
     cursor: not-allowed;
