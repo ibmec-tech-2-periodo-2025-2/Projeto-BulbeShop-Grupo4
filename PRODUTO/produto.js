@@ -1,6 +1,6 @@
-// ===== PRODUTO.JS - PÁGINA DE DETALHES DO PRODUTO =====
-
-// Controle de quantidade
+// ==========================================================
+// CONTROLE DE QUANTIDADE
+// ==========================================================
 const diminuir = document.getElementById('diminuir');
 const aumentar = document.getElementById('aumentar');
 const quantidade = document.getElementById('quantidade');
@@ -19,14 +19,21 @@ aumentar.addEventListener('click', () => {
     quantidade.textContent = valor;
 });
 
-// Carrossel de imagens
+
+
+// ==========================================================
+// CARROSSEL DE IMAGENS
+// ==========================================================
 const imagens = document.querySelectorAll('.slides img');
 const anterior = document.querySelector('.btn-anterior');
 const proximo = document.querySelector('.btn-proximo');
 let indice = 0;
 
 function mostrarImagem(novoIndice) {
-    imagens[indice].classList.remove('ativo');
+    if (imagens.length === 0) return;
+
+    if (imagens[indice]) imagens[indice].classList.remove('ativo');
+
     indice = (novoIndice + imagens.length) % imagens.length;
     imagens[indice].classList.add('ativo');
 }
@@ -34,146 +41,104 @@ function mostrarImagem(novoIndice) {
 anterior.addEventListener('click', () => mostrarImagem(indice - 1));
 proximo.addEventListener('click', () => mostrarImagem(indice + 1));
 
-// ===== FUNÇÕES DE FAVORITOS E CARRINHO =====
 
-// Adicionar/Remover dos Favoritos
-function toggleFavorito() {
+
+// ==========================================================
+// FAVORITOS — SALVAR APENAS IDs
+// ==========================================================
+
+// Função para pegar ID do produto pela URL
+function obterIdProduto() {
     const urlParams = new URLSearchParams(window.location.search);
-    const idProduto = parseInt(urlParams.get('id'));
-    
-    if (!idProduto) {
-        return;
-    }
-    
-    let favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
-    const imgCoracao = document.querySelector('.coracao');
-    
+    return parseInt(urlParams.get("id"));
+}
+
+const coracao = document.querySelector(".coracao");
+
+// Alternar favorito ao clicar
+coracao.addEventListener("click", () => {
+    const idProduto = obterIdProduto();
+    if (isNaN(idProduto)) return;
+
+    let favoritos = JSON.parse(localStorage.getItem("favoritos") || "[]");
+
     if (favoritos.includes(idProduto)) {
-        // Remove dos favoritos
         favoritos = favoritos.filter(id => id !== idProduto);
-        imgCoracao.src = '../assets/images/coracao.png';
+        coracao.classList.remove("ativo");
     } else {
-        // Adiciona aos favoritos
         favoritos.push(idProduto);
-        imgCoracao.src = '../assets/images/coracao-vermelho.png';
+        coracao.classList.add("ativo");
     }
-    
-    localStorage.setItem('favoritos', JSON.stringify(favoritos));
-}
 
-// Verificar se produto já está nos favoritos ao carregar
-function verificarFavorito() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const idProduto = parseInt(urlParams.get('id'));
-    
-    if (!idProduto) return;
-    
-    const favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
-    const imgCoracao = document.querySelector('.coracao');
-    
-    if (favoritos.includes(idProduto)) {
-        imgCoracao.src = '../assets/images/coracao-preenchido.png';
-    }
-}
-
-// Adicionar ao Carrinho
-function adicionarAoCarrinhoProduto() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const idProduto = parseInt(urlParams.get('id'));
-    
-    if (!idProduto) {
-        return;
-    }
-    
-    const produto = buscarProdutoPorId(idProduto);
-    
-    if (!produto) {
-        return;
-    }
-    
-    let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
-    const itemExistente = carrinho.find(item => item.id === idProduto);
-    
-    if (itemExistente) {
-        itemExistente.quantidade += valor;
-    } else {
-        carrinho.push({
-            id: idProduto,
-            quantidade: valor
-        });
-    }
-    
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    
-    // Reset quantidade
-    valor = 1;
-    quantidade.textContent = valor;
-}
-
-// Carregar dados do produto da URL
-function carregarProduto() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const idProduto = parseInt(urlParams.get('id'));
-    
-    if (!idProduto) {
-        window.location.href = '../HOME/home.html';
-        return;
-    }
-    
-    const produto = buscarProdutoPorId(idProduto);
-    
-    if (!produto) {
-        window.location.href = '../HOME/home.html';
-        return;
-    }
-    
-    // Atualizar informações na página
-    document.querySelector('.produto-titulo').textContent = produto.nome;
-    document.querySelector('.descricao-texto').innerHTML = produto.descricao;
-    
-    const precoFinal = calcularPrecoComDesconto(produto.preco, produto.desconto);
-    document.querySelector('.preco-atual').textContent = formatarPreco(precoFinal);
-    
-    if (produto.desconto > 0) {
-        document.querySelector('.preco-antigo').textContent = formatarPreco(produto.preco);
-        document.querySelector('.badge-desconto').textContent = `-${produto.desconto}%`;
-        const economia = produto.preco - precoFinal;
-        document.querySelector('.economia-info span').textContent = `Você economiza ${formatarPreco(economia)} nesta compra`;
-    } else {
-        document.querySelector('.preco-linha').style.display = 'none';
-        document.querySelector('.economia-info').style.display = 'none';
-    }
-    
-    // Atualizar imagens do carrossel
-    const slides = document.querySelector('.slides');
-    slides.innerHTML = '';
-    
-    if (produto.imagemDetalhes && produto.imagemDetalhes.length > 0) {
-        produto.imagemDetalhes.forEach((img, index) => {
-            slides.innerHTML += `<img src="../${img}" class="${index === 0 ? 'ativo' : ''}" alt="${produto.nome}">`;
-        });
-    } else {
-        slides.innerHTML = `<img src="../${produto.imagem}" class="ativo" alt="${produto.nome}">`;
-    }
-    
-    // Atualizar rating
-    document.querySelector('.rating-numero').textContent = produto.avaliacao.toFixed(1);
-    document.querySelector('.rating-reviews').textContent = `(${produto.totalAvaliacoes} avaliações)`;
-}
-
-// Event Listeners
-document.addEventListener('DOMContentLoaded', function() {
-    carregarProduto();
-    verificarFavorito();
-    
-    // Botão de favorito
-    document.querySelector('.coracao').addEventListener('click', toggleFavorito);
-    
-    // Botões de adicionar ao carrinho
-    const botoesCarrinho = document.querySelectorAll('.btn-comprar');
-    botoesCarrinho.forEach(botao => {
-        botao.addEventListener('click', function() {
-            adicionarAoCarrinhoProduto();
-        });
-    });
+    localStorage.setItem("favoritos", JSON.stringify(favoritos));
 });
+
+// Estado inicial do coração
+function verificarFavorito() {
+    const idProduto = obterIdProduto();
+    const favoritos = JSON.parse(localStorage.getItem("favoritos") || "[]");
+
+    if (favoritos.includes(idProduto)) {
+        coracao.classList.add("ativo");
+    }
+}
+
+document.addEventListener("DOMContentLoaded", verificarFavorito);
+
+
+
+// ==========================================================
+// COMPARTILHAR LINK
+// ==========================================================
+const botaoCompartilhar = document.querySelector(".link");
+
+botaoCompartilhar.addEventListener("click", () => {
+    const url = window.location.href;
+
+    navigator.clipboard.writeText(url)
+        .then(() => {
+            alert("🔗 Link copiado para a área de transferência!");
+        })
+        .catch(() => {
+            alert("❌ Não foi possível copiar o link.");
+        });
+});
+
+
+
+// ==========================================================
+// ADICIONAR AO CARRINHO
+// ==========================================================
+
+// 🔥 IMPORTANTE: no HTML o botão deve ser:
+// <button id="btnAdicionarCarrinho" class="btn-comprar">Adicionar ao Carrinho</button>
+
+const botaoCarrinho = document.getElementById("btnAdicionarCarrinho");
+
+if (botaoCarrinho) {
+    botaoCarrinho.addEventListener("click", () => {
+        const idProduto = obterIdProduto();
+        const produto = buscarProdutoPorId(idProduto); // vem do produtos-data.js
+        if (!produto) return;
+
+        let carrinho = JSON.parse(localStorage.getItem("carrinho") || "[]");
+
+        const itemExistente = carrinho.find(item => item.id === idProduto);
+
+        if (itemExistente) {
+            // aumenta a quantidade do mesmo item
+            itemExistente.quantidade += valor; // valor = quantidade escolhida na página
+        } else {
+            // adiciona o item novo
+            carrinho.push({
+                id: idProduto,
+                quantidade: valor
+            });
+        }
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        // Redireciona para o carrinho
+        window.location.href = "../CARRINHO/carrinho.html";
+    });
+}
