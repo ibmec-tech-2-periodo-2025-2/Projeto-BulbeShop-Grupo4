@@ -78,7 +78,7 @@
     .seletor,
     #seletor,
     #pagamento,
-    #num_cc {
+    .num_cc {
         width: 100%;
         padding: 12px;
         border-radius: 8px;
