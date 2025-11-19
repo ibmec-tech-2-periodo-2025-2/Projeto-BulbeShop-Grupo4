@@ -258,3 +258,6 @@ footer {
     font-size: 12px;
     letter-spacing: -1px;
 }
+.avaliacoes{
+    color: var(--C500);
+}
