@@ -8,7 +8,7 @@ function carregarFavoritos() {
     if (favoritos.length === 0) {
         container.innerHTML = `
             <div style="text-align: center; padding: 40px 20px;">
-                <img src="../assets/images/coracao.png" alt="Sem favoritos" style="width: 100px; opacity: 0.3; margin-bottom: 20px;">
+                <img src="../assets/images/coracao-cinza.png" alt="Sem favoritos" style="width: 150px;; margin-bottom: 20px;">
                 <h2 style="color: var(--C700); font-size: 20px; margin-bottom: 10px;">Nenhum produto favorito</h2>
                 <p style="color: var(--C500); margin-bottom: 20px;">Adicione produtos aos favoritos para vê-los aqui!</p>
                 <a href="../HOME/home.html" style="background-color: var(--AU700); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block;">Ver Produtos</a>
