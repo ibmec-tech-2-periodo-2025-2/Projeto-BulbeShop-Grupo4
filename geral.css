@@ -43,8 +43,12 @@
         width: 120px;
         margin-left: 20px;
     }
+
     .user img {
         width: 47px;
+        border: solid 3px var(--AU700);
+        border-radius: 50%;
+        object-fit: cover;
     }
    
     /*Objetos Main*/
