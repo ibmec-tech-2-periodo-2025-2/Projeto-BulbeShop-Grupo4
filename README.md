@@ -22,6 +22,9 @@ https://docs.google.com/document/d/1oULzIb3oUTXKz7ZAGv0vZh9q03j-VCKPkvTHfUQhytI/
 Apresentação:
 https://www.canva.com/design/DAG2bZnejdI/0p1UnJkcdNMPg1tQbxC2lw/edit?utm_content=DAG2bZnejdI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+Link do site:
+https://ibmec-tech-2-periodo-2025-2.github.io/Projeto-BulbeShop-Grupo4/HOME/home.html
+
 
 Bulbe — Backlog do Produto (do Sprint 1 até o fim do semestre)
 Este documento consolida o backlog do aplicativo Bulbe com base nos protótipos de baixa fidelidade (login → catálogo/home → detalhe do produto → endereço → entrega/pagamento → confirmação). O formato prioriza narrativa/descrição em vez de tabelas.
