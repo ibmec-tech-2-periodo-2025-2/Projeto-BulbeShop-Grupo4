@@ -19,6 +19,9 @@ https://gabriel0doornik.atlassian.net/jira/software/projects/SCRUM/summary
 Abertura e Fechamento - Sprint 2:
 https://docs.google.com/document/d/1oULzIb3oUTXKz7ZAGv0vZh9q03j-VCKPkvTHfUQhytI/edit?usp=sharing
 
+Abertura e Fechamento - Sprint 4:
+https://docs.google.com/document/d/1Fmg5Ln2DAluoDZpmRASaIXDqpqLC7WLg0mWnCKVSKyE/edit?usp=sharing
+
 Apresentação:
 https://www.canva.com/design/DAG2bZnejdI/0p1UnJkcdNMPg1tQbxC2lw/edit?utm_content=DAG2bZnejdI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
